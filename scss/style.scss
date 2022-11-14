@@ -1,0 +1,36 @@
+/*!
+*Theme Name: Anita Vitek
+*Theme URI: https://wa.me/2348161687697
+*Author: Mosuro Zaid
+*Author URI: https://github.com/Mos-zaid
+*Description: This a Custom theme built by Mosuro Zaid for Anita Vitek
+*Version: 1.0
+*/
+
+
+/* ==================== GOOGLE FONTS ==================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* ==================== BASE ==================== */
+
+@import 'base/variables';
+@import 'base/normalize';
+@import 'base/grid';
+@import 'base/basic';
+
+
+
+/* ==================== MODULES ==================== */
+@import 'modules/header';
+@import 'modules/footer';
+@import 'modules/anita';
+
+@import 'modules/_owl.carousel.min.scss';
+@import 'modules/_owl.theme.default.min.scss';
+
+
+
+
+/* ==================== PLUGINS ==================== */
