@@ -162,6 +162,7 @@
             grid-row-end: 3;
 
             img{
+                object-position: -10px 0px;
                 width: 95%;
                 object-fit: cover;
                 max-width: 500px;
@@ -191,7 +192,7 @@
 
             img{
                 height: 473px!important;
-                width: 100%!important;
+                width: 350px!important;
                 max-width: 800px;
                 margin: 0 auto;
                 object-fit: cover;
