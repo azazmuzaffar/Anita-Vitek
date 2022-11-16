@@ -41,7 +41,7 @@
 }
 
 .banner-custom-content-text-position{
-    top: 50%; 
+    top: 53%; 
     left: 50%; 
     transform: translate(-50%, -50%);
     width: 300px
@@ -91,6 +91,7 @@
 }
 
 
+
 /* ==================== HOMEPAGE PICTURE GRID AREA ==================== */
 // 7 by 7
 
@@ -110,6 +111,7 @@
 
         img{
             object-position: -30px 0px;
+            height: 100%;
         }
     }
 
@@ -169,6 +171,7 @@
                 margin: 0 auto;
                 height: 473px!important;
             }
+
         }
 
         .grid-item-3{
@@ -207,12 +210,21 @@
             grid-row-end: 5;
 
             img{
-                height: 473px!important;
-                object-fit: cover;
+                height: 473px;
             }
+
         }
     }
 }
+
+.height-473{
+    height: 330px;
+    object-fit: cover;
+}
+
+// .anita-test{
+//     height: 1041px;
+// }
 
 /* ==================== HOMEPAGE LIMITED OFFER ==================== */
 section.preorder .header-underline{
@@ -274,15 +286,30 @@ section.preorder .header-underline{
 }
 
 
+.the-story-second-img{
+
+
+    @media(min-width: 500px){
+        &{
+            height: 500px;
+            width: 90%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+/* ==================== HOME SHOP BY CAT ==================== */
 
 .shop-by-cat picture img{
     height: 300px;
     object-fit: cover;
 
     @media (min-width: 892px) {
-        height: 460px;  
+        height: 530px;  
     }
 }
+
 .shop-by-cat-relative{
     // height: 110vh;
     padding-top: 40vh;
@@ -294,7 +321,7 @@ section.preorder .header-underline{
 
     @media (min-width: 990px) {
         &{
-            padding-top: 50vh;
+            padding-top: 60vh;
         }
 
         &-bg-img{
@@ -306,7 +333,7 @@ section.preorder .header-underline{
 .shop-by-cat-absolute{
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 47%;
     transform: translate(-50%,-50%);
 }
 
@@ -326,7 +353,7 @@ section.preorder .header-underline{
     border: 1px solid white;
     border-left: 0px;
     border-right: 0px;
-    padding: 10px 0; 
+    padding: 4px 6px; 
 }
 
 /* ==================== OWL Carousel ==================== */
