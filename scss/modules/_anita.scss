@@ -285,6 +285,24 @@ section.preorder .header-underline{
     object-position: center 10px;
 }
 
+.story-bg-img{
+    position: relative;
+    width: 100%;
+
+    img{
+        // height: 450px;
+        object-fit: cover;
+    }
+
+    @media (min-width: 992px){
+        position: absolute;
+        z-index: -20;
+        width: 48%;
+        top: -10px;
+    
+    }
+}
+
 
 .the-story-second-img{
 
