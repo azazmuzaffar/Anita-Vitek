@@ -49,9 +49,9 @@
 
 @media (min-width: 992px){
     .banner-custom-content-text-position{
-        top: 45%; 
-        left: 27%; 
-        transform: translate(-20%, -20%);
+        top: 52%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
         width: 500px
     }
 }
@@ -72,8 +72,12 @@
 
 /* ==================== HOMEPAGE ABOUT ==================== */
 .header-underline{
-    bottom: 0px;
+    bottom: 2px;
     right: 0px;
+}
+
+.about .header-underline.right span{
+    width: 36vw;
 }
 
 .header-underline.right span{
@@ -83,11 +87,24 @@
 }
 
 @media (min-width: 992px){
+
+    .header-underline{
+        bottom: 5px;
+        right: 0px;
+    }
+
+    .about .header-underline.right span{
+        display: inline-block;
+        width: 43vw;
+        border-bottom: black 1px solid;
+    }
+
     .header-underline.right span{
         display: inline-block;
         width: 45vw;
         border-bottom: black 1px solid;
     }
+
 }
 
 
@@ -228,20 +245,26 @@
 
 /* ==================== HOMEPAGE LIMITED OFFER ==================== */
 section.preorder .header-underline{
-    bottom: 55px;
+    bottom: 35px;
     left: 0px;
 }
 
-.header-underline.left span{
+section.preorder .header-underline.left span{
     display: inline-block;
-    width: 40vw;
+    width: 30vw;
     border-bottom: black 1px solid;
 }
 
 @media (min-width: 992px){
-    .header-underline.left span{
+
+    section.preorder .header-underline{
+        bottom: 65px;
+        left: 0px;
+    }
+
+    section.preorder .header-underline.left span{
         display: inline-block;
-        width: 45vw;
+        width: 40vw;
         border-bottom: black 1px solid;
     }
 }
@@ -356,6 +379,7 @@ section.preorder .header-underline{
 }
 
 .absolute-btn{
+    width: 100%;
     left: 50%;
     bottom: 3%;
     transform: translate(-50%,-50%);
@@ -368,6 +392,7 @@ section.preorder .header-underline{
 }
 
 .btn-2{
+    font-weight: 600;
     border: 1px solid white;
     border-left: 0px;
     border-right: 0px;
