@@ -690,6 +690,10 @@ a {
   
 }
 
+.ls-0{
+  letter-spacing: 0px;
+}
+
 .ls-1{
   letter-spacing: 1px;
 }
@@ -710,6 +714,36 @@ a {
   letter-spacing: 5px;
 }
 
+@media (min-width: 992px){
+  .ls-lg-0{
+    letter-spacing: 0px;
+  }
+  
+  .ls-lg-1{
+    letter-spacing: 1px;
+  }
+  
+  .ls-lg-2{
+    letter-spacing: 1.5px;
+  }
+  
+  .ls-lg-3{
+    letter-spacing: 2px;
+  }
+  
+  .ls-lg-4{
+    letter-spacing: 3px;
+  }
+  
+  .ls-lg-5{
+    letter-spacing: 5px;
+  }
+}
+
+.ws-lg-0{
+  word-spacing: 0px;
+}
+
 .ws-1{
   word-spacing: 1px;
 }
@@ -728,6 +762,33 @@ a {
 
 .ws-5{
   word-spacing: 20px;
+}
+
+@media(min-width: 992px){
+  .ws-lg-0{
+    word-spacing: 0px;
+  }
+
+  .ws-lg-1{
+    word-spacing: 1px;
+  }
+  
+  .ws-lg-2{
+    word-spacing: 2px;
+  }
+  
+  .ws-lg-3{
+    word-spacing: 5px;
+  }
+  
+  .ws-lg-4{
+    word-spacing: 10px;
+  }
+  
+  .ws-lg-5{
+    word-spacing: 20px;
+  }
+  
 }
 
 
@@ -1574,7 +1635,7 @@ img.footer-small-icon{
 }
 
 .btn{
-  padding: 10px 10px;
+  padding: 10px 30px;
   border: 1px $black solid;
   background-color: $black;
 }

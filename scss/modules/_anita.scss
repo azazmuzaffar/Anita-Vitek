@@ -113,6 +113,16 @@
 // 7 by 7
 
 
+.rotate-text{
+    transform: rotate(90deg);
+    width: 400px;
+    top: 150px;
+    left: 9vw;
+    span{
+        font-size: 60px;
+    }
+}
+
 .homepage-picture-grid{
     // height: 1400px;
     grid-template-columns: 2fr 1fr;
@@ -287,7 +297,7 @@ section.preorder .header-underline.left span{
 
     @media(min-width: 990px){
         &.custom-lg-height{
-            height: 120vh!important;
+            height: 110vh!important;
         }
     }
 }
@@ -310,10 +320,12 @@ section.preorder .header-underline.left span{
 
 .story-bg-img{
     position: relative;
-    width: 100%;
+
 
     img{
-        // height: 450px;
+        height: 430px;
+        object-position: 0px -70px;
+        width: 100%;
         object-fit: cover;
     }
 
@@ -329,11 +341,11 @@ section.preorder .header-underline.left span{
 
 .the-story-second-img{
 
-
     @media(min-width: 500px){
         &{
-            height: 500px;
-            width: 90%;
+            margin: 0 auto;
+            height: 400px;
+            width: 70%;
             object-fit: cover;
         }
     }
@@ -362,11 +374,11 @@ section.preorder .header-underline.left span{
 
     @media (min-width: 990px) {
         &{
-            padding-top: 60vh;
+            padding-top: 49vh;
         }
 
         &-bg-img{
-            height: 80vh!important;
+            height: 100vh!important;
         }
     }
 }
@@ -374,11 +386,12 @@ section.preorder .header-underline.left span{
 .shop-by-cat-absolute{
     position: absolute;
     left: 50%;
-    top: 47%;
+    top: 45%;
     transform: translate(-50%,-50%);
 }
 
 .absolute-btn{
+    text-align: center;
     width: 100%;
     left: 50%;
     bottom: 3%;
