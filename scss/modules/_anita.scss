@@ -319,6 +319,7 @@ section.preorder .header-underline.left span{
 }
 
 .story-bg-img{
+    margin-bottom: -60px;
     position: relative;
 
 
@@ -330,6 +331,7 @@ section.preorder .header-underline.left span{
     }
 
     @media (min-width: 992px){
+        margin-bottom: auto;
         position: absolute;
         z-index: -20;
         width: 48%;
@@ -409,7 +411,13 @@ section.preorder .header-underline.left span{
     border: 1px solid white;
     border-left: 0px;
     border-right: 0px;
-    padding: 4px 6px; 
+    padding: 1.4px 6px; 
+
+    @media (min-width:992px) {
+        &{
+            padding: 4px 6px;
+        }
+    }
 }
 
 /* ==================== OWL Carousel ==================== */

@@ -310,6 +310,10 @@ a {
 
 /*================== TEXT ===================== */
 
+.line-height-0{
+  line-height: 0;
+}
+
 .line-height-1{
   line-height: 1;
 }
@@ -328,6 +332,32 @@ a {
 
 .line-height-5{
   line-height: 3;
+}
+
+@media (min-width: 992px){
+  .line-height-lg-0{
+    line-height: 0;
+  }
+  
+  .line-height-lg-1{
+    line-height: 1;
+  }
+  
+  .line-height-lg-2{
+    line-height: 1.2;
+  }
+  
+  .line-height-lg-3{
+    line-height: 1.5;
+  }
+  
+  .line-height-lg-4{
+    line-height: 2;
+  }
+  
+  .line-height-lg-5{
+    line-height: 3;
+  }
 }
 
 .text-center {
