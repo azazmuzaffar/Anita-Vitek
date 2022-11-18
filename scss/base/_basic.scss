@@ -376,8 +376,24 @@ a {
   text-align: right;
 }
 
+@media (min-width: 768px) {
+  .text-md-center{
+    text-align: center!important;
+  }
+
+  .text-md-left{
+    text-align: left!important;
+  }
+
+  .text-md-right{
+    text-align: right!important;
+  }
+
+}
+
+
 @media (min-width: 992px) {
-  .text-lg-center{
+  .text-md-center{
     text-align: center!important;
   }
 
