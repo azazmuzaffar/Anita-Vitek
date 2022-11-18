@@ -127,8 +127,8 @@
     // height: 1400px;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto auto;
-    row-gap: 10px;
-    column-gap: 10px;
+    row-gap: 5px;
+    column-gap: 5px;
 
     .grid-item-1{
         grid-column-start: 1;
@@ -287,13 +287,12 @@ section.preorder .header-underline.left span{
 /* ==================== HOMEPAGE STORY ==================== */
 section.story{
     .header-underline{
-        top: 24px
+        top: 24px;
     }
 
     @media(min-width:992px) {
         .header-underline{
             top:142px;
-            // bottom: 35px;
         }
     }
 }
@@ -342,7 +341,7 @@ section.story{
 
     img{
         height: 430px;
-        object-position: 0px -70px;
+        object-position: -50px -70px;
         width: 100%;
         object-fit: cover;
     }
@@ -416,7 +415,7 @@ section.story{
     text-align: center;
     width: 100%;
     left: 50%;
-    bottom: 3%;
+    bottom: 0;
     transform: translate(-50%,-50%);
 
     @media(min-width: 992px){
@@ -431,11 +430,11 @@ section.story{
     border: 1px solid white;
     border-left: 0px;
     border-right: 0px;
-    padding: 1.4px 6px; 
+    padding: 2px 6px; 
 
     @media (min-width:992px) {
         &{
-            padding: 4px 6px;
+            padding: 8px 6px;
         }
     }
 }
