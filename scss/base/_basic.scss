@@ -59,6 +59,10 @@ ul.list-style-none li{
   list-style: none;
 }
 
+ul.list-style-none{
+  padding-left: 0;
+}
+
 // Change the text on the read more button
 details.read-more[open] summary::after {
   content: attr(data-open);
@@ -1160,6 +1164,78 @@ a {
     width: 20%;
   }
 }
+
+@media (min-width: 1200px) {
+  .width-xl-100{
+    width: 100%;
+  }
+
+  .width-xl-95{
+    width: 95%;
+  }
+  
+  .width-xl-90{
+    width: 90%;
+  }
+  
+  .width-xl-85{
+    width: 85%;
+  }
+  
+  .width-xl-80{
+    width: 80%;
+  }
+
+  
+  .width-xl-75{
+    width: 75%;
+  }
+  
+  .width-xl-70{
+    width: 70%;
+  }
+  
+  .width-xl-65{
+    width: 65%;
+  }
+  
+  .width-xl-60{
+    width: 60%;
+  }
+
+  .width-xl-55{
+    width: 55%;
+  }
+  
+  .width-xl-50{
+    width: 50%;
+  }
+
+  .width-xl-45{
+    width: 45%;
+  }
+  
+  .width-xl-40{
+    width: 40%;
+  }
+
+  .width-xl-35{
+    width: 35%;
+  }
+  
+  .width-xl-30{
+    width: 30%;
+  }
+
+  .width-xl-25{
+    width: 25%;
+  }
+
+  .width-xl-20{
+    width: 20%;
+  }
+}
+
 
 .height-100vh{
   height: 100vh!important;

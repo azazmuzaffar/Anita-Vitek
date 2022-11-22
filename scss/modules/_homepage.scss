@@ -98,7 +98,7 @@
 
 .grid-2-reversible{
     position: absolute;
-    top: 0px;
+    top: 20px;
     right: -128px;
 
     @media (min-width: 1200px) {
@@ -135,9 +135,31 @@
     transform: rotate(90deg);
     width: 400px;
     top: 150px;
-    left: 9vw;
+    left: 50px;
     span{
         font-size: 50px;
+    }
+}
+
+img.grid-img{
+
+
+    @media (min-width:1200px) {
+        &{
+            width: 220px;
+            height: 280px;
+        }
+    }
+}
+
+img.grid-img-2{
+
+
+    @media (min-width:1200px) {
+        &{
+            width: 185px;
+            height: 240px;
+        }
     }
 }
 
