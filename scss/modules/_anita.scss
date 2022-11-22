@@ -6,416 +6,14 @@
     background-color: blue;
 }
 
-@media (min-width: 2000px){
+@media (min-width: 1800px){
 
     .custom-container{
-        max-width: 1800px; 
+        max-width: 1700px; 
         margin: 0 auto;     
     }
 }
 
-/* ==================== HOMEPAGE BANNER AREA ==================== */
-.banner-custom-object-position{
-    object-position: 0 0px;
-}
-
-@media (min-width: 992px){
-    .banner-custom-object-position{
-        object-position: 0px -90px;
-    }
-}
-
-.banner-custom-header-text-position{
-    top: 40%; 
-    left: 50%; 
-    transform: translate(-50%, -50%);
-    width: 100vw;
-}
-
-@media (min-width: 992px){
-    .banner-custom-header-text-position{
-        top: 40%; 
-        left: 50%; 
-        transform: translate(-50%, -50%);
-    }
-}
-
-.banner-custom-content-text-position{
-    top: 53%; 
-    left: 50%; 
-    transform: translate(-50%, -50%);
-    width: 300px
-}
-
-@media (min-width: 992px){
-    .banner-custom-content-text-position{
-        top: 52%; 
-        left: 50%; 
-        transform: translate(-50%, -50%);
-        width: 500px
-    }
-}
-
-.banner-custom-scroll-down{
-    left: 50%;
-    bottom: 10%;
-    transform: translate(-50%, -50%);
-}
-
-@media(min-width: 992px){
-    .banner-custom-scroll-down{
-        left: 50%;
-        bottom: 5%;
-    }
-}
-
-
-/* ==================== HOMEPAGE ABOUT ==================== */
-.header-underline{
-    bottom: 2px;
-    right: -15px;
-}
-
-.about .header-underline.right span{
-    width: 36vw;
-}
-
-.header-underline.right span{
-    display: inline-block;
-    width: 35vw;
-    border-bottom: black 1px solid;
-}
-
-@media (min-width: 992px){
-
-    .header-underline{
-        bottom: 5px;
-        right: 0px;
-    }
-
-    .about .header-underline.right span{
-        display: inline-block;
-        width: 43vw;
-        border-bottom: black 1px solid;
-    }
-
-    .header-underline.right span{
-        display: inline-block;
-        width: 45vw;
-        border-bottom: black 1px solid;
-    }
-
-}
-
-
-
-/* ==================== HOMEPAGE PICTURE GRID AREA ==================== */
-// 7 by 7
-
-
-.rotate-text{
-    transform: rotate(90deg);
-    width: 400px;
-    top: 150px;
-    left: 9vw;
-    span{
-        font-size: 50px;
-    }
-}
-
-.homepage-picture-grid{
-    // height: 1400px;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto auto;
-    row-gap: 5px;
-    column-gap: 5px;
-
-    .grid-item-1{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 3;
-
-        img{
-            object-position: -30px 0px;
-            height: 100%;
-        }
-    }
-
-    .grid-item-2 img{
-        height: 100%;
-    }
-
-    .grid-item-3{
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3;
-
-        img{
-            height: 100%;
-        }
-    }
-
-
-}
-
-@media (min-width: 992px){
-    .homepage-picture-grid{
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: 10vh 35vh 35vh 10vh;
-        row-gap: 20px;
-        column-gap: 20px;
-        justify-items: center;
-
-        img{
-            display: block;
-        }
-
-        .grid-item-1{
-            // border: 1px solid black;
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 2;
-            grid-row-end: 4;
-
-            img{
-                display: block;
-                margin: 0 auto;
-                height: 78vh;
-                width: 99%;
-                object-position: 20px 0px;
-            }
-        }
-
-        .grid-item-2{
-            // border: 1px solid black;
-            grid-column-start: 3;
-            grid-column-end: 4;
-            grid-row-start: 1;
-            grid-row-end: 3;
-            justify-self: center;
-
-            img{
-                width: 100%;
-                object-fit: cover;
-                height: 20vh;
-            }
-
-        }
-
-        .grid-item-3{
-            // border: 1px solid black;
-            grid-column-start: 4;
-            grid-column-end: 5;
-            grid-row-start: 2;
-            grid-row-end: 3;
-
-            img{
-                width: 100%;
-                height: 20vh!important;
-            }
-        }
-
-        .grid-item-4{
-            // border: 1px solid black;
-            grid-column-start: 3;
-            grid-column-end: 4;
-            grid-row-start: 3;
-            grid-row-end: 5;
-
-            img{
-                height: 45vh;
-                width: 100%;
-                object-fit: cover;
-            }
-        }
-
-        .grid-item-5{
-            // border: 1px solid black;
-            grid-column-start: 4;
-            grid-column-end: 5;
-            grid-row-start: 3;
-            grid-row-end: 5;
-
-            img{
-                height: 45vh;
-                // width: 500px;
-                object-fit: cover;
-            }
-
-        }
-    }
-}
-
-.height-473{
-    height: 330px;
-    object-fit: cover;
-}
-
-// .anita-test{
-//     height: 1041px;
-// }
-
-/* ==================== HOMEPAGE LIMITED OFFER ==================== */
-section.preorder .header-underline{
-    bottom: 40px;
-    left: -10px;
-}
-
-section.preorder .header-underline.left span{
-    display: inline-block;
-    width: 28vw;
-    border-bottom: black 1px solid;
-}
-
-@media (min-width: 992px){
-
-    section.preorder .header-underline{
-        bottom: 65px;
-        left: 0px;
-    }
-
-    section.preorder .header-underline.left span{
-        display: inline-block;
-        width: 40vw;
-        border-bottom: black 1px solid;
-    }
-}
-
-
-/* ==================== HOMEPAGE STORY ==================== */
-section.story{
-    .header-underline{
-        top: 24px;
-        right: -35px;
-
-        &.right span{
-            width:60vw
-        }
-    }
-
-    @media(min-width:992px) {
-        .header-underline{
-            top: 60px;
-            right: -24px;
-        }
-    }
-}
-
-.story-image-position{
-    object-position: -200px 0px;
-
-    @media(min-width: 500px){
-        &{
-            width: 100vw;
-            object-position: center center;
-        }
-
-        &.custom-lg-height{
-            height: 90vh!important;
-        }
-    }
-
-    @media(min-width: 990px){
-        &.custom-lg-height{
-            height: 110vh!important;
-        }
-    }
-}
-
-.story-custom-text-position{
-    bottom: 20%;
-    right: 10%;
-
-    @media(min-width: 500px){
-        &{
-            bottom: 25%;
-            right: 15%;
-        }
-    }
-}
-
-.story-img-2-position{
-    object-position: center 10px;
-}
-
-.story-bg-img{
-    margin-bottom: -60px;
-    position: relative;
-
-
-    img{
-        height: 480px;
-        // object-position: -50px -70px;
-        width: 100%;
-        object-fit: cover;
-    }
-
-    @media (min-width: 992px){
-        margin-bottom: auto;
-        position: absolute;
-        z-index: -20;
-        width: 50%;
-        top: -10px;
-    
-    }
-}
-
-
-.the-story-second-img{
-
-    @media(min-width: 500px){
-        &{
-            margin: 0 auto;
-            height: 400px;
-            width: 70%;
-            object-fit: cover;
-        }
-    }
-}
-
-
-/* ==================== HOME SHOP BY CAT ==================== */
-
-.shop-by-cat picture img{
-    height: 300px;
-    object-fit: cover;
-
-    @media (min-width: 892px) {
-        height: 530px;  
-    }
-}
-
-.shop-by-cat-relative{
-    // height: 110vh;
-    padding-top: 40vh;
-
-    &-bg-img{
-        height: 60vh!important;
-        object-position: left top;
-    }
-
-    @media (min-width: 990px) {
-        &{
-            padding-top: 49vh;
-        }
-
-        &-bg-img{
-            height: 100vh!important;
-        }
-    }
-}
-
-.shop-by-cat-absolute{
-    position: absolute;
-    left: 50%;
-    top: 45%;
-    transform: translate(-50%,-50%);
-    @media (min-width: 992px){
-        top: 38%;
-    }
-}
 
 .absolute-btn{
     text-align: center;
@@ -444,6 +42,42 @@ section.story{
         }
     }
 }
+
+$finalHeight: 75vh;
+$finalWidth: 100vw;
+$scrollBarHeight: 1px;
+
+.horizontal-scroll-wrapper {
+    // position: absolute;
+    display: block;
+    // top: 0;
+    // left: 0;
+    width: calc(#{$finalHeight} + #{$scrollBarHeight});
+    max-height: $finalWidth;
+    margin: 0;
+    padding-top: $scrollBarHeight;
+    background: #abc;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: rotate(-90deg) translateY(-$finalHeight);
+    transform-origin: right top;
+    & > div {
+      display: block;
+      padding: 5px;
+      background: #cab;
+      transform: rotate(90deg);
+      transform-origin: right top;
+    }
+  }
+  
+  .squares {
+    padding: $finalHeight 0 0 0;
+    & > div {
+      width: 0.33 * $finalWidth;
+      height: $finalHeight;
+      margin: 10px 0;
+    }
+  }
 
 /* ==================== OWL Carousel ==================== */
 

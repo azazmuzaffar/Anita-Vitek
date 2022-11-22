@@ -32,10 +32,10 @@
 
     </head>
     <body>
-        <header class="header">
+        <header id="header" class="p-fixed z-index-top pb-4">
 
             <!-- DESKTOP NAV MENU -->
-            <div class="container mt-4 d-none d-lg-block p-fixed z-index-top text-uppercase">
+            <div class="container mt-4 d-none d-lg-block text-uppercase">
                 <nav>
                     <div class="d-flex justify-content-lg-between align-items-center">
                         <!-- Left Nav Bar -->
@@ -43,13 +43,13 @@
                             <ul class="list-style-none ps-0 d-flex gap-1 gap-lg-2">
                                 <li><a href="#">Boutique</a></li>
                                 <li><a href="#">About</a></li>
-                                <li><a href="#">Concept</a></li>
+                                <li><a href="concept.html">Concept</a></li>
                                 <li><a href="#">Collections</a></li>
                             </ul>
                         </div>
                         <!-- Logo -->
                         <div class="col-auto mx-auto">
-                            <a href="#">
+                            <a href="index.html">
                                 <picture>
                                     <source media="(min-width:650px)" srcset="./images/icons/logo.png">
                                     <source media="(min-width:465px)" srcset="./images/icons/logo.png">
@@ -69,7 +69,7 @@
             </div>
 
             <!-- Mobile Nav Menu -->
-            <div class="d-block d-lg-none text-uppercase p-fixed z-index-top mt-3">
+            <div class="d-block d-lg-none text-uppercase mt-3">
                 <nav>
                     <div class="container d-flex justify-content-between align-items-center">
                         <div class="hamburger-icon-container">
@@ -129,14 +129,16 @@
             </section>
 
             <!-- About Area -->
-            <section id="about" class="about mt-5 pt-3 pt-lg-5">
+            <section id="about" class="about mt-4 pt-3 pt-lg-5">
                 <!-- HEADING AND UNDERLINE -->
-                <div class="p-relative mt-lg-5">
-                    <h2 class="fw-400 ls-2 fs-40 fs-lg-60 text-center mb-0">ABOUT</h2>
-                    <div class="p-absolute header-underline right">
-                        <span></span>
+                <header>
+                    <div class="p-relative mt-lg-5">
+                        <h2 class="fw-400 ls-2 fs-40 fs-lg-60 text-center mb-0">ABOUT</h2>
+                        <div class="p-absolute header-underline right">
+                            <span></span>
+                        </div>
                     </div>
-                </div>
+                </header>
 
                 <!-- CONTENT -->
                 <div class="width-85 width-md-60 width-lg-55 mt-3 mt-lg-3 mx-auto mb-5 pb-3 mb-lg-5 pb-lg-5">
@@ -197,12 +199,15 @@
 
 
                 <div class="d-flex mt-5 mt-lg-5 pt-lg-5">
-                    <div class="row">
+                    <div class="row custom-container">
                         <!-- 1st Grid Item -->
                         <div class="col-8 col-lg-6 mt-lg-4 pt-lg-5">
-                            <picture>
+                            <picture class="d-inline-block p-relative">
                                 <img class="img-cover" src="./images/products/Anita-Image-1.png" alt="Anita Banner Image">
-                            </picture>    
+                                <div class="grid-picture-number right">
+                                    <h3 class="fs-35 fs-lg-50 fs-xl-60 mt-0">01</h3>
+                                </div>    
+                            </picture>
                         </div>
 
 
@@ -210,8 +215,15 @@
                             <div class="row flex-column flex-lg-row">
                                 <!-- 2nd Grid Item -->
                                 <div class="col-12 col-lg-5 mx-lg-4">
-                                    <picture>
-                                        <img  class="mx-auto img-cover" src="./images/products/Anita-Image-2.png" alt="Anita Banner Image">
+                                    <picture class="d-inline-block p-relative">
+                                        <img class="img-cover" src="./images/products/Anita-Image-2.png" alt="Anita Banner Image">
+                                        <div class="grid-picture-number left">
+                                            <h3 class="fs-24 fs-lg-30 fs-xl-40 mt-0">02</h3>
+                                        </div>
+                                        
+                                        <div class="d-none d-lg-block grid-2-reversible">
+                                            <h3 class="fs-24 fs-lg-30 fs-xl-35 ls-2 mt-0 fw-400"><span class="color-white">REV</span>ERSIBLE</h3>
+                                        </div> 
                                     </picture>
 
                                     <div class="mx-auto d-none d-lg-block">
@@ -235,8 +247,11 @@
                                 <div class="col-12 col-lg-5 mt-lg-4 pt-lg-5">
 
                                     <div class="p-relative">
-                                        <picture>
-                                            <img  class="img-cover" src="./images/products/Anita-Image-3.png" alt="Anita Banner Image">
+                                        <picture class="d-inline-block p-relative">
+                                            <img class="img-cover" src="./images/products/Anita-Image-3.png" alt="Anita Banner Image">
+                                            <div class="grid-picture-number left">
+                                                <h3 class="fs-24 fs-lg-30 fs-xl-40 mt-0">03</h3>
+                                            </div>    
                                         </picture>
     
                                         <div class="rotate-text p-absolute">
@@ -258,8 +273,15 @@
                                 </div>
                                 <!-- 5th Grid Item -->
                                 <div class="d-none mt-lg-4 pt-lg-5 d-lg-block col-4">
-                                    <picture>
+                                    <!-- <picture>
                                         <img height="860"  class="height-473" src="./images/products/Anita-Image-4.png" alt="Anita Banner Image">
+                                    </picture> -->
+
+                                    <picture class="d-inline-block p-relative">
+                                        <img class="img-cover" src="./images/products/Anita-Image-4.png" alt="Anita Banner Image">
+                                        <div class="grid-picture-number left">
+                                            <h3 class="fs-24 fs-lg-30 fs-xl-40 mt-0">04</h3>
+                                        </div>    
                                     </picture>
                                 </div>
 
@@ -269,14 +291,14 @@
                     </div>
                 </div>
 
-                <div class="container d-grid homepage-picture-grid">
-                    <!-- 1ST GRID -->
+                <!-- <div class="container d-grid homepage-picture-grid">
+                    1ST GRID
                     <div class="grid-item-1">
                         <picture>
                             <img class="img-cover" src="./images/products/Anita-Image-1.png" alt="Anita Banner Image">
                         </picture>    
                     </div>
-                    <!-- 2ND GRID -->
+                    2ND GRID
                     <div class="grid-item-2 justify-content-center">
                         <picture>
                             <img  class="mx-auto img-cover" src="./images/products/Anita-Image-2.png" alt="Anita Banner Image">
@@ -298,7 +320,7 @@
 
                         
                     </div>
-                    <!-- 3RD GRID -->
+                    3RD GRID
                     <div class="grid-item-3">
 
                         <div class="p-relative">
@@ -317,13 +339,13 @@
                         </div>
 
                     </div>
-                    <!-- 4TH GRID -->
+                    4TH GRID
                     <div class="d-none d-lg-block grid-item-4">
                         <picture>
                             <img  class="" src="./images/products/asset-3.jpg" alt="Anita Banner Image">
                         </picture>
                     </div>
-                    <!-- 5TH GRID -->
+                    5TH GRID
                     <div class="d-none d-lg-block col-4 grid-item-5">
                         <picture>
                             <img height="860" src="./images/products/Anita-Image-4.png" alt="Anita Banner Image">
@@ -331,7 +353,7 @@
                     </div>
 
 
-                </div>
+                </div> -->
 
 
                 <!-- Mobile device extras -->
@@ -350,22 +372,28 @@
 
 
             <!-- Preorder -->
-            <section class="preorder mt-5 pt-3 pt-lg-5">
+            <section class="preorder mt-5 pt-3 pt-lg-5 pb-5 pb-lg-0">
                 <!-- HEADING AND UNDERLINE -->
-                <div class="mb-lg-5 pb-lg-5">
-                    <div class="p-relative pt-lg-4 mt-lg-5 mb-5">
-                        <h2 class="fw-400 fs-50 fs-lg-80 text-center mb-0"><span class=" fw-400 fs-20 ls-2 ws-1 fs-lg-30 pe-2">UP TO</span>20% </h2>
-                        <h2 class="fw-400 fs-30 ws-1 ws-lg-4 fs-lg-60 text-center mt-0 ls-2">LIMITED PRE-ORDER </h2>
-                        <div class="p-absolute header-underline left">
-                            <span></span>
+                <header>
+                    <div class="mb-5 pb-5">
+                        <div class="p-relative pt-4 mt-5 mb-5">
+                            <h2 class="fw-400 fs-50 fs-lg-80 text-center mb-0"><span class=" fw-400 fs-20 ls-2 ws-1 fs-lg-30 pe-2">UP TO</span>20% </h2>
+                            <h2 class="fw-400 fs-30 ws-1 ws-lg-4 fs-lg-60 text-center mt-0 ls-2">LIMITED PRE-ORDER </h2>
+                            <div class="p-absolute header-underline left">
+                                <span></span>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </header>
 
 
                 <div class="mt-5 pt-5">
-                    <div class="mt-lg-5 pt-lg-5">
-                        <P>Hello there</P>
+                    <div class="mt-5 pt-5">
+ 
+                       <p>Reminder to check this links <a href="https://codepen.io/kevinpowell/pen/ExbKBQa">kevinpowell</a></p>
+                       <p>Reminder to check this links <a href="https://css-tricks.com/pure-css-horizontal-scrolling/">CSS tricks</a></p>
+
+
                     </div>
 
                 </div>
@@ -408,9 +436,9 @@
 
 
                     <!-- The content -->
-                    <div class="mb-lg-5 pb-lg-5 mt-lg-1 pt-4 d-flex flex-md-row flex-row-reverse align-items-lg-center gap-1 gap-lg-0 justify-content-md-around">
-                        <div class="pe-3 pe-lg-0 col-6 col-md-7 col-lg-auto width-lg-35">
-                            <p class="fs-15 fs-md-20 fs-lg-22 ls-0 ls-lg-1 pt-4 pt-lg-5 mt-lg-5 line-height-2 line-height-lg-3">
+                    <div class="mb-lg-5 pb-lg-5 mt-lg-1 pt-4 d-flex flex-lg-row flex-row-reverse align-items-lg-center gap-1 gap-lg-0 justify-content-md-around">
+                        <div class="pt-md-5 mt-lg-3 pt-lg-0 pe-3 pe-lg-0 col-6 col-md-7 col-lg-auto width-lg-35">
+                            <p class="fs-15 fs-lg-16 fs-xl-22 ls-0 ls-lg-1 pt-4 pt-md-5 pt-lg-5 mt-lg-5 line-height-2 line-height-lg-3">
                                 Personalization, transformation, and nature<br class="d-none d-md-block">
                                 are the foreground of Anita Vitek’s designs. <br class="d-none d-md-block">
                                 Her goal is to change the way people dress: <br class="d-none d-md-block">
@@ -428,7 +456,7 @@
                 </div>
 
                 <!-- The Girl in the middle of the page -->
-                <div class="p-relative pt-3 pt-lg-5 mt-5">
+                <div class="p-relative pt-3 pt-lg-5 mt-5 mb-0 mb-md-5 mb-lg-0">
                     <div>
                         <picture>
                             <img  class="height-70vh height-lg-80vh width-100 width-md-60 width-lg-30 img-cover d-block mx-auto story-img-2-position" src="./images/products/Anita-Vitek-MAJOR-coat-jacket.jpg" alt="Anita Banner Image">
@@ -502,5 +530,7 @@
             </div>
 
         </main>
+
+        <script src="./js/scripts.js"></script>
 </body>
 </html>
