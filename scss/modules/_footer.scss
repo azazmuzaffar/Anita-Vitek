@@ -1,13 +1,44 @@
 .footer{
 
-    &__icons img{
+    .footer-img img{
         width: 30px;
-        margin-left: 28px;
     }
 
-    &__contact img{
-        width: 55px;
-        margin-left: 18px;
+    ul li{
+        padding: 2.5px 0;
     }
+
+    .footer-subscribe{
+
+
+        &-input{
+            padding: 10px 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            width: 100%;
+            border: 0px;
+        }
+
+        &-btn{
+            padding: 12px 10px;
+            font-size: 14px;
+            width: 100%;
+            border: 0px;
+        }
+
+        @media(min-width: 992px){
+            &-input{
+                padding: 15px 10px;
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+    
+            &-btn{
+                padding: 16px 10px;
+                font-size: 16px;
+            }
+        }
+    }
+
 
 }

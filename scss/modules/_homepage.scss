@@ -98,12 +98,12 @@
 
 .grid-2-reversible{
     position: absolute;
-    top: 20px;
-    right: -128px;
+    top: 13px;
+    right: -105px;
 
     @media (min-width: 1200px) {
         &{
-            right: -148px;
+            right: -106px;
         }
     }
 }
@@ -134,15 +134,24 @@
 .rotate-text{
     transform: rotate(90deg);
     width: 400px;
-    top: 150px;
+    top: 160px;
     left: 50px;
     span{
-        font-size: 50px;
+        font-size: 40px;
     }
 }
 
 img.grid-img{
 
+    // height: 1%;
+    // width: 155px;
+
+    // @media (min-width:550px) {
+    //     &{
+    //         height: 35vh;
+    //         width: 100%;
+    //     }
+    // }
 
     @media (min-width:1200px) {
         &{
