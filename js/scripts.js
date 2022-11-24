@@ -28,7 +28,7 @@ let zaid_tl = gsap.timeline({
         scrub: true,
         pin: true,
         start: "top top",
-        end: "+=100%"
+        end: "+=80%"
       },
 
   });
@@ -45,19 +45,19 @@ zaid_tl.fromTo(".about-line", {
 //   Animate the heading
 zaid_tl.fromTo("#about-header", {
     opacity: 0,
-    y: -30
+
 },{
     opacity: 1,
-    y: 0 
+    text: "ABOUT"
 })
 
-zaid_tl.fromTo("#about-text", {
-    x: -200,
-    opacity: 0
-},{
-    x: 0,
-    opacity: 1,  
-})
+// zaid_tl.fromTo("#about-text", {
+//     x: -200,
+//     opacity: 0
+// },{
+//     x: 0,
+//     opacity: 1,  
+// })
 
 //   Animate the text
 // zaid_tl.to("#about-text", { 
@@ -70,7 +70,19 @@ zaid_tl.fromTo("#about-text", {
 // `
 // })
 
+let sections = gsap.utils.toArray(".panel");
  
-
+gsap.to(sections, {
+    xPercent: -100 * (sections.length - 1),
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".scroll-container",
+      pin: true,
+      scrub: 1,
+      snap: 1 / (sections.length - 1),
+      // base vertical scrolling on how wide the container is so it feels more natural.
+      end: "+=3500",
+    }
+  });
 
   

@@ -74,7 +74,7 @@
 
     .header-underline{
         bottom: 5px;
-        right: 0px;
+        right: -25px;
     }
 
     .about .header-underline.right span{
@@ -134,7 +134,7 @@
 .rotate-text{
     transform: rotate(90deg);
     width: 400px;
-    top: 160px;
+    top: 157px;
     left: 50px;
     span{
         font-size: 40px;
@@ -311,6 +311,48 @@ section.preorder .header-underline{
     bottom: 40px;
     left: -10px;
 }
+
+// .scroll-container-body{
+//     overscroll-behavior: none;
+//     height: 100vh;
+// }
+
+.scroll-container {
+    overscroll-behavior: none;
+    width: 600%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .panel{
+    height: 100vh;
+  }
+
+  section.red{
+    background-color: red;
+  }
+
+  .orange{
+    background-color: orange;
+  }
+
+  .purple{
+    background-color: purple;
+  }
+
+  .green{
+    background-color: green;
+  }
+
+  .gray{
+    background-color: gray;
+  }
+
+  .blue{
+    background-color: blue;
+  }
+
 
 section.preorder .header-underline.left span{
     display: inline-block;
