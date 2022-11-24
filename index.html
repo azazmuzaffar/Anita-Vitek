@@ -128,27 +128,33 @@
                 </div>
             </section>
 
+            
+
             <!-- About Area -->
             <section id="about" class="about mt-4 pt-3 pt-lg-5">
-                <!-- HEADING AND UNDERLINE -->
-                <header>
-                    <div class="p-relative mt-lg-5">
-                        <h2 class="fw-400 ls-2 fs-40 fs-lg-60 text-center mb-0">ABOUT</h2>
-                        <div class="p-absolute header-underline right">
-                            <span></span>
+                <!-- HEADING, UNDERLINE AND CONTENT -->
+                <div class="height-100vh">
+                    <header class="pt-20vh">
+                        <div class="p-relative mt-lg-5">
+                            <h2 id="about-header" class="fw-400 ls-2 fs-40 fs-lg-60 text-center mb-0">ABOUT</h2>
+                            <div class="p-absolute header-underline right">
+                                <span class="about-line"></span>
+                            </div>
                         </div>
+                    </header>
+    
+                    <!-- CONTENT -->
+                    <div class="width-85 width-md-60 width-lg-55 mt-3 mt-lg-3 mx-auto mb-5 pb-3 mb-lg-5 pb-lg-5">
+                        <p id="about-text" class="ms-0 ms-lg-5 ls-1 fw-400 fs-16 fs-lg-18 text-center line-height-2 line-height-lg-3">
+                            <!-- GOTTEN FROM GSAP -->
+                            For women who love current fashion and care <br class="d-none d-md-block">
+                            about the environment, Anita Vitek created an <br class="d-none d-md-block">
+                            innovative modular design concept with <br class="d-none d-md-block">
+                            natural high-quality materials, that allows the <br class="d-none d-md-block">
+                            emphasis on individual style on the go.
+                        </p>
                     </div>
-                </header>
 
-                <!-- CONTENT -->
-                <div class="width-85 width-md-60 width-lg-55 mt-3 mt-lg-3 mx-auto mb-5 pb-3 mb-lg-5 pb-lg-5">
-                    <p class="ms-0 ms-lg-5 ls-1 fw-400 fs-16 fs-lg-18 text-center line-height-2 line-height-lg-3">
-                        For women who love current fashion and care <br class="d-none d-md-block">
-                        about the environment, Anita Vitek created an <br class="d-none d-md-block">
-                        innovative modular design concept with <br class="d-none d-md-block">
-                        natural high-quality materials, that allows the <br class="d-none d-md-block">
-                        emphasis on individual style on the go.
-                    </p>
                 </div>
 
                 <!-- THE PICTURE GRID SEGMENT -->
@@ -587,6 +593,10 @@
                 </div>
             </div>
         </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script> -->
 
         <script src="./js/scripts.js"></script>
 </body>
