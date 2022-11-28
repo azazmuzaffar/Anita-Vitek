@@ -32,10 +32,10 @@
 
     </head>
     <body>
-        <header id="header" class="p-fixed z-index-top pb-2">
+        <header id="header" class="p-fixed z-index-5 pb-1">
 
             <!-- DESKTOP NAV MENU -->
-            <div class="container px-0 mt-2 d-none d-lg-block text-uppercase">
+            <div class="container px-0 mt-1 d-none d-lg-block text-uppercase">
                 <nav>
                     <div class="d-flex justify-content-lg-between align-items-center">
                         <!-- Left Nav Bar -->
@@ -51,9 +51,7 @@
                         <div class="col-auto mx-auto">
                             <a href="index.html">
                                 <picture>
-                                    <source media="(min-width:650px)" srcset="./images/icons/logo.png">
-                                    <source media="(min-width:465px)" srcset="./images/icons/logo.png">
-                                    <img  class="d-block width-50 mx-auto" src="./images/icons/logo.png" alt="Anita Vitek Logo">
+                                    <img  class="d-block width-40 mx-auto" src="./images/icons/logo.png" alt="Anita Vitek Logo">
                                 </picture>
                             </a>
                         </div>
@@ -102,22 +100,22 @@
                     <div class="p-relative">
 
                         <div>
-                            <picture>
-                                <source media="(min-width:650px)" srcset="./images/products/Anita-Vitek-MAJOR-coat-jacket.jpg">
-                                <source media="(min-width:465px)" srcset="./images/products/Anita-Vitek-MAJOR-coat-jacket.jpg">
-                                <img  class="width-100 height-100vh img-cover banner-custom-object-position" src="./images/products/Anita-Vitek-MAJOR-coat-jacket.jpg" alt="Anita Vitek Banner Image">
-                            </picture>
+                            
+                            <video autoplay muted loop class="home-page-banner__img-position width-100 height-100vh img-cover" src="./videos/Hero-Section-Video-1.mp4"></video>
+                            <!-- <picture>
+                                <img  src="./images/products/Anita-Vitek-MAJOR-coat-jacket.jpg" alt="Anita Vitek Banner Image">
+                            </picture> -->
                         </div>
                         
-                        <div class="p-absolute color-white banner-custom-header-text-position">
+                        <div class="home-page-banner__text-1 opacity-0 p-absolute color-white">
                             <h1 class="fw-400 fs-30 fs-md-35 fs-lg-40  text-center">MODULAR WOMENSWEAR</h1>
                         </div>
 
-                        <div class="p-absolute color-white fs-16 fs-md-20 fs-lg-22 text-center banner-custom-content-text-position">
+                        <div class="home-page-banner__text-2 opacity-0 p-absolute color-white fs-16 fs-md-20 fs-lg-22 text-center">
                             <p>WHERE HIGH FASHION MEETS FUNCTION TO KEEP YOU IN STYLE AND TO BE MORE SUSTAINABLE</p>
                         </div>
 
-                        <div class="p-absolute banner-custom-scroll-down">
+                        <div class="p-absolute home-page-banner__scroll-down">
                             <a href="#about">
                                 <picture>
                                     <img  class="d-block mx-auto img-cover width-30 width-lg-40" src="./images/icons/svg/Group-34.svg" alt="Anita scroll down icon">
@@ -126,18 +124,16 @@
                         </div>
                     </div>
                 </div>
-            </section>
-
-            
+            </section>   
 
             <!-- About Area -->
-            <section id="about" class="about mt-4 pt-3 pt-lg-5">
+            <section id="about" class="mt-4 pt-3 pt-lg-5">
                 <!-- HEADING, UNDERLINE AND CONTENT -->
-                <div class="height-70vh">
-                    <header class="pt-20vh">
-                        <div class="p-relative mt-lg-5">
-                            <h2 id="about-header" class="fw-400 ls-2 fs-40 fs-lg-60 text-center mb-0"></h2>
-                            <div class="p-absolute header-underline right">
+                <div class="height-50vh height-lg-70vh">
+                    <header class="pt-15vh">
+                        <div class="p-relative">
+                            <h2 class="about__header fw-400 ls-2 fs-40 fs-lg-60 text-center mb-0">ABOUT</h2>
+                            <div class="p-absolute about__underline">
                                 <span class="about-line"></span>
                             </div>
                         </div>
@@ -145,7 +141,7 @@
     
                     <!-- CONTENT -->
                     <div class="width-85 width-md-60 width-lg-55 mt-3 mt-lg-3 mx-auto mb-5 pb-3 mb-lg-5 pb-lg-5">
-                        <p id="about-text" class="ms-0 ms-lg-5 ls-1 fw-400 fs-16 fs-lg-18 text-center line-height-2 line-height-lg-3">
+                        <p class="about-text ms-0 ms-lg-5 ls-1 fw-400 fs-16 fs-lg-18 text-center line-height-2 line-height-lg-3">
                             <!-- GOTTEN FROM GSAP -->
                             For women who love current fashion and care <br class="d-none d-md-block">
                             about the environment, Anita Vitek created an <br class="d-none d-md-block">
@@ -156,60 +152,20 @@
                     </div>
 
                 </div>
+            </section>
 
-                <!-- THE PICTURE GRID SEGMENT -->
-                <!-- <div class="d-grid homepage-picture-grid mt-5 mt-lg-0 custom-container">
-                    <div class="grid-item-1">
-                        <picture>
-                            <img class="img-cover" src="./images/products/Group-94.png" alt="Anita Banner Image">
-                        </picture>
+            <!-- Image Grid -->
+            <section id="image-grid">
+                <div class="container p-relative mt-5 mt-lg-2 pt-lg-2">
+                    <!-- Mobile Reversible text -->
+                    <div class="p-absolute d-md-none image-grid__mobile-reversible-text z-index-4">
+                        <h3 class="fs-20 ls-2 mt-0 fw-400"><span class="color-white">REVER</span>SIBLE</h3>
                     </div>
-                    <div class="grid-item-2">
-                        <picture>
-                            <img  class="mx-auto img-cover" src="./images/products/Group-95.png" alt="Anita Banner Image">
-                        </picture>
-                        <div class="width-95 mx-auto d-none d-lg-block">
-                            <p class="text-uppercase fs-18 fs-lg-20 font-2 ls-1">
-                                Maximising your wardrobe<br class="d-none d-xl-block">
-                                 and your suitcase.
-                            </p>
-                            <p class="ls-1 fs-16 fs-lg-18">
-                                A concept where you can button <br class="d-none d-xl-block">
-                                on and button off 3 different <br class="d-none d-xl-block">
-                                sleeves, change color and your <br class="d-none d-xl-block">
-                                silhouette. This is not only <br class="d-none d-xl-block">
-                                fashionable but also functional.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="grid-item-3">
-                        <picture>
-                            <img  class="img-cover" src="./images/products/Group-60.png" alt="Anita Banner Image">
-                        </picture>
-                        <div class="mt-3 pt-0 pt-lg-2 mt-lg-4 d-none d-lg-block">
-                            <a class="btn color-white fs-16 fw-400 px-4" href="#">LEARN MORE</a>
-                        </div>
-                    </div>
-                    <div class="grid-item-4 d-none d-lg-block">
-                        <picture>
-                            <img  class="" src="./images/products/asset-3.jpg" alt="Anita Banner Image">
-                        </picture>
-                    </div>
-                     
-                    <div class="grid-item-5 d-none d-lg-block">
-                        <picture>
-                            <img  class="" src="./images/products/Group 1.png" alt="Anita Banner Image">
-                        </picture>
-                    </div>
-                </div> -->
-
-
-                <div class="container mt-5 mt-lg-2 pt-lg-2">
                     <div class="row width-xl-90 mx-auto mt-lg-5 pt-lg-5">
                         <!-- 1st Grid Item -->
-                        <div class="col-8 col-lg-5 mt-lg-4 pt-lg-5 pe-lg-4">
+                        <div class="col-8 col-lg-5 mt-lg-4 px-2 pt-lg-5 pe-lg-4">
                             <picture class="d-inline-block p-relative">
-                                <img class="img-cover" src="./images/products/Anita-Image-1.png" alt="Anita Banner Image">
+                                <img class="image-grid__img-1 img-cover" src="./images/products/Anita-Image-1.png" alt="Anita Banner Image">
                                 <div class="grid-picture-number right">
                                     <h3 class="fs-35 fw-500 fs-lg-50 fs-xl-60 mt-0">01</h3>
                                 </div>    
@@ -222,7 +178,7 @@
                                 <!-- 2nd Grid Item -->
                                 <div class="col-12 width-lg-45 col-lg-6 mx-lg-0">
                                     <picture class="d-inline-block p-relative">
-                                        <img class="img-cover grid-img" src="./images/products/Anita-Image-2.png" alt="Anita Banner Image">
+                                        <img class="image-grid__img-2 img-cover grid-img" src="./images/products/Anita-Image-2.png" alt="Anita Banner Image">
                                         <div class="grid-picture-number left">
                                             <h3 class="fs-24 fw-500 fs-lg-30 fs-xl-30 mt-0">02</h3>
                                         </div>
@@ -233,7 +189,7 @@
                                     </picture>
 
                                     <div class="mx-auto d-none d-lg-block">
-                                        <p class="text-uppercase fs-16 fs-lg-15 font-2 mt-lg-2 mb-lg-1">
+                                        <p class="image-grid__img-2-text text-uppercase fs-16 fs-lg-15 font-2 mt-lg-2 mb-lg-1">
                                             Maximising your wardrobe<br class="d-none d-xl-block">
                                              and your suitcase.
                                         </p>
@@ -250,18 +206,23 @@
                                 </div>
 
                                 <!-- 3rd Grid Item -->
-                                <div class="col-12 col-lg-5 mt-lg-4 pt-lg-5">
+                                <div class="col-12 ps-lg-4 col-lg-5 mt-lg-4 pt-lg-5">
 
                                     <div class="p-relative">
                                         <picture class="d-inline-block p-relative">
-                                            <img class="grid-img img-cover" src="./images/products/Anita-Image-3.png" alt="Anita Banner Image">
+                                            <img class="image-grid__img-3 grid-img img-cover" src="./images/products/Anita-Image-3.png" alt="Anita Banner Image">
                                             <div class="grid-picture-number left">
                                                 <h3 class="fs-24 fw-500 fs-lg-30 fs-xl-30 mt-0">03</h3>
                                             </div>    
                                         </picture>
     
                                         <div class="d-none d-lg-block rotate-text p-absolute">
-                                            <p class="fs-14 fw-300">ADD-ON<span> . </span>LINE & FORM<span> . </span>FUNCTIONAL</p>
+                                            <ul class="width-80 me-auto fs-14 fw-300 d-grid">
+                                                <li>ADD-ON</li>
+                                                <li>LINE & FORM</li>
+                                                <li>FUNCTIONAL</li>
+                                            </ul>
+                                            <!-- <p class="width-80 mx-auto fs-14 fw-300">ADD-ON<span> . </span>LINE & FORM<span> . </span>FUNCTIONAL</p> -->
                                         </div>
                                     </div>
 
@@ -297,70 +258,6 @@
                     </div>
                 </div>
 
-                <!-- <div class="container d-grid homepage-picture-grid">
-                    1ST GRID
-                    <div class="grid-item-1">
-                        <picture>
-                            <img class="img-cover" src="./images/products/Anita-Image-1.png" alt="Anita Banner Image">
-                        </picture>    
-                    </div>
-                    2ND GRID
-                    <div class="grid-item-2 justify-content-center">
-                        <picture>
-                            <img  class="mx-auto img-cover" src="./images/products/Anita-Image-2.png" alt="Anita Banner Image">
-                        </picture>
-
-                        <div class="mx-auto d-none d-lg-block">
-                            <p class="text-uppercase fs-16 fs-lg-18 font-2 ls-1">
-                                Maximising your wardrobe<br class="d-none d-xl-block">
-                                 and your suitcase.
-                            </p>
-                            <p class="ls-1 fs-16 fs-lg-16 line-height-2 line-height-lg-3">
-                                A concept where you can button <br class="d-none d-xl-block">
-                                on and button off 3 different <br class="d-none d-xl-block">
-                                sleeves, change color and your <br class="d-none d-xl-block">
-                                silhouette. This is not only <br class="d-none d-xl-block">
-                                fashionable but also functional.
-                            </p>
-                        </div>
-
-                        
-                    </div>
-                    3RD GRID
-                    <div class="grid-item-3">
-
-                        <div class="p-relative">
-                            <picture>
-                                <img  class="img-cover" src="./images/products/Anita-Image-3.png" alt="Anita Banner Image">
-                            </picture>
-
-                            <div class="rotate-text p-absolute">
-                                <p>ADD-ON <span>.</span> LINE & FORM <span>.</span> FUNCTIONAL</p>
-                            </div>
-                        </div>
-
-
-                        <div class="mt-3 pt-0 pt-lg-2 mt-lg-4 d-none d-lg-block">
-                            <a class="btn color-white fs-14 fs-lg-16 fw-400 px-4" href="#">LEARN MORE</a>
-                        </div>
-
-                    </div>
-                    4TH GRID
-                    <div class="d-none d-lg-block grid-item-4">
-                        <picture>
-                            <img  class="" src="./images/products/asset-3.jpg" alt="Anita Banner Image">
-                        </picture>
-                    </div>
-                    5TH GRID
-                    <div class="d-none d-lg-block col-4 grid-item-5">
-                        <picture>
-                            <img height="860" src="./images/products/Anita-Image-4.png" alt="Anita Banner Image">
-                        </picture>
-                    </div>
-
-
-                </div> -->
-
 
                 <!-- Mobile device extras -->
                 <div  class="width-80 mx-auto mt-3 d-block d-lg-none">
@@ -374,92 +271,141 @@
     
                 </div>
 
-                <!-- <div class="horizontal-scroll-wrapper squares">
-                    <div>item 1</div>
-                    <div>item 2</div>
-                    <div>item 3</div>
-                    <div>item 4</div>
-                    <div>item 5</div>
-                    <div>item 6</div>
-                    <div>item 7</div>
-                    <div>item 8</div>
-                  </div> -->
-
             </section>
 
 
             <!-- Preorder -->
-            <section class="preorder mt-5 pt-3 pt-lg-5 pb-5 pb-lg-0">
+            <section id="preorder" class="preorder mt-5 pt-3 pt-lg-5 pb-5 pb-lg-0">
                 <!-- HEADING AND UNDERLINE -->
-                <header>
+                <header class="mb-lg-5 pb-lg-5">
                     <div class="mb-5 pb-5">
                         <div class="p-relative pt-4 mt-5 mb-5">
-                            <h2 class="fw-400 fs-50 fs-lg-80 text-center mb-0"><span class=" fw-400 fs-20 ls-2 ws-1 fs-lg-30 pe-2">UP TO</span>20% </h2>
-                            <h2 class="fw-400 fs-30 ws-1 ws-lg-4 fs-lg-60 text-center mt-0 ls-2">LIMITED PRE-ORDER </h2>
+                            <h2 class="preorder__header fw-400 fs-50 fs-lg-80 text-center mb-0"><span class=" fw-400 fs-20 ls-2 ws-1 fs-lg-30 pe-2">UP TO</span>20% </h2>
+                            <h2 class="preorder__header-2 fw-400 fs-30 ws-1 ws-lg-4 fs-lg-60 text-center mt-0 ls-2">LIMITED PRE-ORDER </h2>
                             <div class="p-absolute header-underline left">
-                                <span></span>
+                                <span class="preorder-line"></span>
                             </div>
                         </div>
                     </div>
                 </header>
+            </section>
 
-
-                <div class="mt-5 pt-5">
-                    <div class="mt-5 pt-5">
- 
+            <!-- Horizontal Scroll -->
+            <section id="horizontal-scroll">
+                <div>
+                    <div>
+    
                         <div class="scroll-container-body">
-                            <div class="scroll-container">
-                                <div class="description panel blue">
-                                  <div><h1>Horizontal snapping sections (simple)</h1>
-                                    <p>Scroll vertically to scrub the horizontal animation. It also dynamically snaps to the sections in an organic way based on the velocity. The snapping occurs based on the natural ending position after momentum is applied, not a simplistic "wherever it is when the user stops".</p>
-                                    <!-- <div class="scroll-down">Scroll down<div class="arrow"></div></div> -->
-                                  </div>
+                            <div class="scroll-container p-relative">
+
+                                <!-- Absolute PREORDER -->
+                                <div class="p-absolute pre-order__absolute-center" style="z-index: 100000;">
+                                    <h1 class="text-center pre-order__text fw-400 fs-50 fs-lg-80">PRE-ORDER</h1>
                                 </div>
-                              
-                              
-                                <section class="panel red">
-                                  ONE
-                                  <div class="description">
-                                    <div><h1>Horizontal snapping sections (simple)</h1>
-                                      <p>Scroll vertically to scrub the horizontal animation. It also dynamically snaps to the sections in an organic way based on the velocity. The snapping occurs based on the natural ending position after momentum is applied, not a simplistic "wherever it is when the user stops".</p>
-                                      <!-- <div class="scroll-down">Scroll down<div class="arrow"></div></div> -->
-                                    </div>
-  
-                                </section>
-                                <section class="panel orange">
-                                  TWO
-                                  <div class="description">
-                                    <div><h1>Horizontal snapping sections (simple)</h1>
-                                      <p>Scroll vertically to scrub the horizontal animation. It also dynamically snaps to the sections in an organic way based on the velocity. The snapping occurs based on the natural ending position after momentum is applied, not a simplistic "wherever it is when the user stops".</p>
-                                      <!-- <div class="scroll-down">Scroll down<div class="arrow"></div></div> -->
+
+                                <!-- 1st Horizontal Section -->
+                                <section class="panel color-white height-100vh">
+
+                                    <!-- white pictures -->
+                                    <div class="d-flex px-0 height-lg-100vh gap-1 gap-lg-5 align-content-center justify-content-lg-around justify-content-xxl-center horizontal-scroll__content pt-5">
+                                        <div class="p-relative">
+                                            <picture><img class="height-100 height-lg-100 img-cover" src="./images/products/plainwhite.png" alt=""></picture>
+                                        </div>
+                                        
+                                        <div class="p-relative">
+                                            <picture><img class="height-100 height-lg-100 img-cover" src="./images/products/plainwhite.png" alt=""></picture>
+                                        </div>
                                     </div>
                                 </section>
-                                <section class="panel purple">
-                                  THREE
-                                  <div class="description">
-                                    <div><h1>Horizontal snapping sections (simple)</h1>
-                                      <p>Scroll vertically to scrub the horizontal animation. It also dynamically snaps to the sections in an organic way based on the velocity. The snapping occurs based on the natural ending position after momentum is applied, not a simplistic "wherever it is when the user stops".</p>
-                                      <!-- <div class="scroll-down">Scroll down<div class="arrow"></div></div> -->
+
+                                <!-- 2nd Horizontal Section -->
+                                <section class="panel">
+                                    <div class="d-flex px-0 pt-lg-0 py-4 height-lg-100vh gap-1 gap-lg-5 align-content-center justify-content-lg-around justify-content-xxl-center horizontal-scroll__content">
+                                        <div class="p-relative">
+                                            <picture><img class="height-100 height-lg-100 img-cover" src="./images/products/Anita-img-1.png" alt=""></picture>
+                                            <div class="p-absolute absolute-btn color-white">
+                                                <p class="pt-0 mt-3"><a href="#" class="color-white  btn-2 fs-15">SHOP NOW</a></p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div>
+                                            <picture><img class="height-100 height-lg-100 img-cover" src="./images/products/Anita-img-2.png" alt=""></picture>
+                                        </div>
+
                                     </div>
                                 </section>
-                                <section class="panel green">
-                                  FOUR
-                                  <div class="description">
-                                    <div><h1>Horizontal snapping sections (simple)</h1>
-                                      <p>Scroll vertically to scrub the horizontal animation. It also dynamically snaps to the sections in an organic way based on the velocity. The snapping occurs based on the natural ending position after momentum is applied, not a simplistic "wherever it is when the user stops".</p>
-                                      <!-- <div class="scroll-down">Scroll down<div class="arrow"></div></div> -->
+
+                                <!-- 3rd Horizontal Section -->
+                                <section class="panel  bg-black color-white">
+                                    <div class="d-flex pt-lg-0 py-4 px-0 height-lg-100vh gap-1 gap-lg-5 align-content-center justify-content-lg-around justify-content-xxl-center horizontal-scroll__content">
+                                        <div class="p-relative">
+                                            <picture><img class="height-100 height-lg-100 img-cover" src="./images/products/Anita-img-3.png" alt=""></picture>
+                                            <div class="p-absolute absolute-btn color-white">
+                                                <p class="pt-0 mt-3"><a href="#" class="color-white  btn-2 fs-15">SHOP NOW</a></p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="p-relative">
+                                            <picture><img class="height-100 height-lg-100 img-cover" src="./images/products/Anita-img-4.png" alt=""></picture>
+                                        </div>
+
                                     </div>
                                 </section>
-                                <section class="panel gray">
-                                  FIVE
-                                  <div class="description">
-                                    <div><h1>Horizontal snapping sections (simple)</h1>
-                                      <p>Scroll vertically to scrub the horizontal animation. It also dynamically snaps to the sections in an organic way based on the velocity. The snapping occurs based on the natural ending position after momentum is applied, not a simplistic "wherever it is when the user stops".</p>
-                                      <!-- <div class="scroll-down">Scroll down<div class="arrow"></div></div> -->
+                                
+                                <!-- 4th Horizontal Section -->
+                                <section class="panel">
+                                    <div class="d-flex pt-lg-0 py-4 px-0 height-lg-100vh gap-1 gap-lg-5 align-content-center justify-content-lg-around justify-content-xxl-center horizontal-scroll__content">
+                                        <div class="p-relative">
+                                            <picture><img class="height-100 height-lg-100 img-cover" src="./images/products/asset-7.jpg" alt=""></picture>
+                                            <div class="p-absolute absolute-btn color-white">
+                                                <p class="pt-0 mt-3"><a href="#" class="color-white  btn-2 fs-15">SHOP NOW</a></p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div>
+                                            <picture><img class="height-100 height-lg-100 img-cover" src="./images/products/Anita-img-5.png" alt=""></picture>
+                                        </div>
+
                                     </div>
                                 </section>
-                              
-                              </div>
+
+                                <!-- 5th Horizontal Section -->
+                                <section class="panel bg-black color-white">
+                                    <div class="d-flex px-0 pt-lg-0 py-4 height-lg-100vh gap-1 gap-lg-2 align-content-center justify-content-lg-around justify-content-xxl-center horizontal-scroll__content">
+                                        
+                                        <div>
+                                            <picture><img class="height-100 height-lg-100 img-cover" src="./images/products/asset-20.jpg" alt=""></picture>
+                                        </div>
+
+                                        <div class="p-relative">
+                                            <picture><img class="height-100 height-lg-100 img-cover" src="./images/products/9C3A6717_f.png" alt=""></picture>
+                                            <div class="p-absolute absolute-btn color-white">
+                                                <p class="pt-0 mt-3"><a href="#" class="color-white  btn-2 fs-15">SHOP NOW</a></p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </section>
+
+                                <!-- 6th Horizontal Section -->
+                                <section class="panel">
+                                    <div class="d-flex px-0 pt-lg-0 py-4 height-lg-100vh gap-1 gap-lg-5 align-content-center justify-content-lg-around justify-content-xxl-center horizontal-scroll__content">
+                                       
+                                        <div>
+                                            <picture><img class="height-100 height-lg-100 img-cover" src="./images/products/9C3A7122_f.png" alt=""></picture>
+                                        </div>
+
+                                        <div class="p-relative">
+                                            <picture><img class="height-100 height-lg-100 img-cover" src="./images/products/9C3A2925_f.png" alt=""></picture>
+                                            <div class="p-absolute absolute-btn color-white">
+                                                <p class="pt-0 mt-3"><a href="#" class="color-white  btn-2 fs-15">SHOP NOW</a></p>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </section>
+                                
+                            </div>
 
                         </div>
 
@@ -467,6 +413,9 @@
                     </div>
 
                 </div>
+            </section>
+
+            <section>
 
                 <!-- The Banner -->
                 <div class="p-relative mb-lg-5 pb-lg-5">
