@@ -263,41 +263,20 @@ section.preorder .header-underline{
     }
 }
 
-  section.red{
-    background-color: red;
-  }
-
-  .orange{
-    background-color: orange;
-  }
-
-  .purple{
-    background-color: purple;
-  }
-
-  .green{
-    background-color: green;
-  }
-
-  .gray{
-    background-color: gray;
-  }
-
-  .blue{
-    background-color: blue;
-  }
-
+// .Zpanel{
+//     height: 50vh;
+// }
 
 section.preorder .header-underline.left span{
     display: inline-block;
-    width: 28vw;
+    width: 30vw;
     border-bottom: black 1px solid;
 }
 
 @media (min-width: 992px){
 
     section.preorder .header-underline{
-        bottom: 62px;
+        bottom: 79px;
         left: 0px;
     }
 
@@ -369,7 +348,7 @@ section.story{
 }
 
 .story-img-2-position{
-    object-position: center 10px;
+    object-position: center center;
 }
 
 .story-bg-img{

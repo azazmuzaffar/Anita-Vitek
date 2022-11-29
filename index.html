@@ -51,7 +51,7 @@
                         <div class="col-auto mx-auto">
                             <a href="index.html">
                                 <picture>
-                                    <img  class="d-block width-40 mx-auto" src="./images/icons/logo.png" alt="Anita Vitek Logo">
+                                    <img  class="header_logo d-block width-40 mx-auto" src="./images/icons/logo.png" alt="Anita Vitek Logo">
                                 </picture>
                             </a>
                         </div>
@@ -79,7 +79,7 @@
                         </div>
                         <div class="col-auto mx-auto">
                             <picture>
-                                <a href="#"><img  class="d-block width-30 mx-auto" src="./images/icons/logo.png" alt="Anita Vitek Logo"></a>
+                                <a href="index.html"><img class="header_logo d-block width-30 mx-auto" src="./images/icons/logo.png" alt="Anita Vitek Logo"></a>
                             </picture>
                         </div>
                         <div>
@@ -96,12 +96,12 @@
         <main>
             <!-- Banner Area -->
             <section class="home-page-banner mb-lg-5">
-                <div>
+                <div style="cursor: url('/images/icons/svg/play.svg'), auto;">
                     <div class="p-relative">
 
                         <div>
                             
-                            <video autoplay muted loop class="home-page-banner__img-position width-100 height-100vh img-cover" src="./videos/Hero-Section-Video-1.mp4"></video>
+                            <video id="myVideo" autoplay muted loop class="home-page-banner__img-position width-100 height-80vh height-lg-100vh img-cover" src="./videos/Hero-Section-Video-1.mp4"></video>
                             <!-- <picture>
                                 <img  src="./images/products/Anita-Vitek-MAJOR-coat-jacket.jpg" alt="Anita Vitek Banner Image">
                             </picture> -->
@@ -274,10 +274,10 @@
             </section>
 
 
-            <!-- Preorder -->
-            <section id="preorder" class="preorder mt-5 pt-3 pt-lg-5 pb-5 pb-lg-0">
+            <!-- Preorder Text -->
+            <section id="preorder" class="preorder pb-5 pb-lg-0">
                 <!-- HEADING AND UNDERLINE -->
-                <header class="mb-lg-5 pb-lg-5">
+                <header class="mb-lg-5 pb-lg-5 mt-5 pt-20vh pt-lg-10vh">
                     <div class="mb-5 pb-5">
                         <div class="p-relative pt-4 mt-5 mb-5">
                             <h2 class="preorder__header fw-400 fs-50 fs-lg-80 text-center mb-0"><span class=" fw-400 fs-20 ls-2 ws-1 fs-lg-30 pe-2">UP TO</span>20% </h2>
@@ -296,15 +296,15 @@
                     <div>
     
                         <div class="scroll-container-body">
-                            <div class="scroll-container p-relative">
+                            <div class="scroll-container test p-relative">
 
                                 <!-- Absolute PREORDER -->
                                 <div class="p-absolute pre-order__absolute-center" style="z-index: 100000;">
-                                    <h1 class="text-center pre-order__text fw-400 fs-50 fs-lg-80">PRE-ORDER</h1>
+                                    <h1 class="text-center pre-order__text fw-400 fs-50 fs-lg-80" style=" mix-blend-mode: screen;">PRE-ORDER</h1>
                                 </div>
 
                                 <!-- 1st Horizontal Section -->
-                                <section class="panel color-white height-100vh">
+                                <section class="hor-1 panel color-white height-100vh">
 
                                     <!-- white pictures -->
                                     <div class="d-flex px-0 height-lg-100vh gap-1 gap-lg-5 align-content-center justify-content-lg-around justify-content-xxl-center horizontal-scroll__content pt-5">
@@ -324,7 +324,7 @@
                                         <div class="p-relative">
                                             <picture><img class="height-100 height-lg-100 img-cover" src="./images/products/Anita-img-1.png" alt=""></picture>
                                             <div class="p-absolute absolute-btn color-white">
-                                                <p class="pt-0 mt-3"><a href="#" class="color-white  btn-2 fs-15">SHOP NOW</a></p>
+                                                <p class="pt-0 mt-3"><a href="#" class="color-white  btn-2 fs-15">ORDER VEST</a></p>
                                             </div>
                                         </div>
                                         
@@ -358,7 +358,7 @@
                                         <div class="p-relative">
                                             <picture><img class="height-100 height-lg-100 img-cover" src="./images/products/asset-7.jpg" alt=""></picture>
                                             <div class="p-absolute absolute-btn color-white">
-                                                <p class="pt-0 mt-3"><a href="#" class="color-white  btn-2 fs-15">SHOP NOW</a></p>
+                                                <p class="pt-0 mt-3"><a href="#" class="color-white  btn-2 fs-15">ORDER BLOUSE</a></p>
                                             </div>
                                         </div>
                                         
@@ -380,7 +380,7 @@
                                         <div class="p-relative">
                                             <picture><img class="height-100 height-lg-100 img-cover" src="./images/products/9C3A6717_f.png" alt=""></picture>
                                             <div class="p-absolute absolute-btn color-white">
-                                                <p class="pt-0 mt-3"><a href="#" class="color-white  btn-2 fs-15">SHOP NOW</a></p>
+                                                <p class="pt-0 mt-3"><a href="#" class="color-white  btn-2 fs-15">ORDER DRESS</a></p>
                                             </div>
                                         </div>
 
@@ -398,7 +398,7 @@
                                         <div class="p-relative">
                                             <picture><img class="height-100 height-lg-100 img-cover" src="./images/products/9C3A2925_f.png" alt=""></picture>
                                             <div class="p-absolute absolute-btn color-white">
-                                                <p class="pt-0 mt-3"><a href="#" class="color-white  btn-2 fs-15">SHOP NOW</a></p>
+                                                <p class="pt-0 mt-3"><a href="#" class="color-white  btn-2 fs-15">ORDER BERMUDAS</a></p>
                                             </div>
                                         </div>
                                         
@@ -415,7 +415,8 @@
                 </div>
             </section>
 
-            <section>
+            <!-- The ladies in the middle of the screen -->
+            <section id="middle-girl">
 
                 <!-- The Banner -->
                 <div class="p-relative mb-lg-5 pb-lg-5">
@@ -425,7 +426,7 @@
                         </picture>
                     </div> 
                     <div class="p-absolute color-white story-custom-text-position">
-                        <P class="fw-400 fs-24 fs-md-35 fs-lg-40 font-2 text-center font-2 pb-0 mb-0">AW <span class="fw-400 fs-30 fs-lg-50">22</span></P>
+                        <P class="fw-400 fs-24 fs-md-35 fs-lg-40 font-2 text-center font-2 pb-0 mb-0">AW<span class="fw-400 fs-30 fs-lg-50">22</span></P>
                         <p class="pt-0 mt-3 mt-lg-4"><a href="#" class="color-white  px-1 btn-2 fs-15 ls-1 ws-2">VIEW COLLECTION</a></p>
                     </div>
 
@@ -434,15 +435,15 @@
             </section>
 
             <!-- The story Area -->
-            <section class="story">
+            <section id="story" class="story">
                 
                 <!-- HEADING, UNDERLINE, FLOATING BG IMAGE AND TEXT -->
                 <div class="mt-5 mt-lg-0 pt-4 pt-lg-0 pb-5 mb-lg-3">
                     <div class="mb-4 my-lg-5 py-lg-5">
                         <div class="p-relative mt-lg-5 pt-lg-3 pb-lg-5">
-                            <h2 class="fw-400 ls-2 fs-40 fs-lg-60 text-left text-md-center text-lg-center ps-3 ps-lg-0 mb-0 pb-3 pb-lg-5 mt-lg-0 mb-lg-5">THE STORY</h2>
+                            <h2 class="story__header fw-400 ls-2 fs-40 fs-lg-60 text-left text-md-center text-lg-center ps-3 ps-lg-0 mb-0 pb-3 pb-lg-5 mt-lg-0 mb-lg-5">THE STORY</h2>
                             <div class="p-absolute header-underline right width-45 width-lg-40">
-                                <span></span>
+                                <span class="story-line"></span>
                             </div>
 
                             <div class="story-bg-img">
@@ -457,7 +458,7 @@
                     <!-- The content -->
                     <div class="mb-lg-0 pb-lg-0 pt-4 pt-lg-0 d-flex flex-lg-row flex-row-reverse align-items-lg-center gap-1 gap-lg-0 justify-content-md-around">
                         <div class="pt-md-5 mt-lg-3 pt-lg-5 pe-3 pe-lg-0 col-6 col-md-7 col-lg-auto">
-                            <p class="fs-15 fs-lg-16 fw-400 fs-xl-18 ls-0 ls-lg-1 pt-4 pt-md-5 pt-lg-5 mt-lg-5 line-height-2 line-height-lg-3">
+                            <p class="story-text fs-15 fs-lg-16 fw-400 fs-xl-18 ls-0 ls-lg-1 pt-4 pt-md-5 pt-lg-5 mt-lg-5 line-height-2 line-height-lg-3">
                                 Personalization, transformation, and nature<br class="d-none d-md-block">
                                 are the foreground of Anita Vitek’s designs. <br class="d-none d-md-block">
                                 Her goal is to change the way people dress: <br class="d-none d-md-block">
@@ -477,9 +478,11 @@
                 <!-- The Girl in the middle of the page -->
                 <div class="p-relative pt-3 pt-lg-0 mt-5 mb-0 mb-md-5 mb-lg-0">
                     <div>
-                        <picture>
+                        <!-- <picture>
                             <img  class="height-70vh height-lg-80vh width-80 width-md-60 width-lg-30 img-cover d-block mx-auto story-img-2-position" src="./images/products/Anita-Vitek-MAJOR-coat-jacket.jpg" alt="Anita Banner Image">
-                        </picture>
+                        </picture> -->
+                        <video  style="cursor: url('/images/icons/svg/play.svg'), auto;" autoplay muted loop class="height-45vh height-lg-65vh width-80 width-md-60 width-lg-30 img-cover d-block mx-auto story-img-2-position" src="./videos/IMG_0672.mov"></video>
+
                     </div>
 
                     <div class="p-absolute absolute-btn color-white">
