@@ -237,7 +237,7 @@ zaid_story.fromTo([storyHeader], {
 
 },{
     opacity: 1,
-    scale: 1.5,
+    scale: 1,
 }).fromTo([storyBgImage, storyText, storyImg2], {
   opacity: 0
 }, {
@@ -245,4 +245,29 @@ zaid_story.fromTo([storyHeader], {
   scale: 1,
 })
 
+
+// HOMEPAGE 3 IMAGES AT FOOTER
+let zaid_img = gsap.timeline({
+  // toggleActions: "restart pause resume pause",
+    scrollTrigger: {
+        trigger: ".img1",
+        start: "top bottom+=350px",
+        scrub: true,
+        // pin: true,
+      },
+
+  });
+
+let img1 = document.querySelector(".img1");
+let img2 = document.querySelector(".img2");
+let img3 = document.querySelector(".img3");
+
+zaid_img.fromTo([img1, img2, img3], {
+    scrollTrigger: ".img1",
+    scale: 1.25,
+}, {
+    scale: 1,
+    ease: "slow(0.7, 0.7, false)",
+    // duration: 2,
+});
   
