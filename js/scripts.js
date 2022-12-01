@@ -8,10 +8,12 @@ document.addEventListener('scroll', (e) => {
     let url = window.location.origin
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
         document.getElementById("header").style.backgroundColor = "white";
-        document.querySelector(".header_logo").src = `${url}/images/icons/aV-header-main-site.png`
+        // document.querySelector(".header_logo").src = `${url}/images/icons/aV-header-main-site.png`
+        document.querySelector(".header_logo").src = `./images/icons/aV-header-main-site.png`
       } else {
         document.getElementById("header").style.backgroundColor = "transparent";
-        document.querySelector(".header_logo").src = `${url}/images/icons/logo.png`
+        // document.querySelector(".header_logo").src = `${url}/images/icons/logo.png`
+        document.querySelector(".header_logo").src = `./images/icons/logo.png`
       }
 });
 
@@ -217,7 +219,7 @@ zaid_hor.to(sections, {
 
   });
 
-//   The about Line
+//   The story Line
 zaid_story.fromTo(".story-line", {
     scaleX: 0, 
 }, {
@@ -226,11 +228,12 @@ zaid_story.fromTo(".story-line", {
     ease: "none"
 })
 
-//   The about heading text
+//   The story heading text
 let storyHeader = document.querySelector(".story__header");
 let storyBgImage = document.querySelector(".story-bg-img");
 let storyText = document.querySelector(".story-text");
 let storyImg2 = document.querySelector(".the-story-second-img");
+let storybtn = document.querySelector(".story-btn");
 zaid_story.fromTo([storyHeader], {
     opacity: 0,
     scale: 1.5,
@@ -238,7 +241,7 @@ zaid_story.fromTo([storyHeader], {
 },{
     opacity: 1,
     scale: 1,
-}).fromTo([storyBgImage, storyText, storyImg2], {
+}).fromTo([storyBgImage, storyText, storyImg2, storybtn], {
   opacity: 0
 }, {
   opacity: 1,
@@ -270,4 +273,34 @@ zaid_img.fromTo([img1, img2, img3], {
     ease: "slow(0.7, 0.7, false)",
     // duration: 2,
 });
+
+
+let hpVideo1 = document.getElementById("video1")
+gsap.to("#video1", {
+  scrollTrigger : {
+    trigger: "#video1",
+    start: "top center",
+    onEnter: ({progress, direction, isActive}) => { hpVideo1.play(); console.log("Video 1 Starts")},
+    onLeave: ({progress, direction, isActive}) => { hpVideo1.pause(); console.log("Video 1 Pause")},
+    onEnterBack: ({progress, direction, isActive}) => { hpVideo1.play(); console.log("Video 1 Starts")},
+    onLeaveBack: ({progress, direction, isActive}) => { hpVideo1.pause(); console.log("Video 1 Pause")},
+  }
+})  
+
+hpVideo1.addEventListener('click', function(e){
+  hpVideo1.muted = !hpVideo1.muted;
+});
+
+let hpVideo2 = document.getElementById("video2")
+gsap.to("#video2", {
+  scrollTrigger : {
+    trigger: "#video2",
+    start: "center top",
+    end: "+=160%",
+    onEnter: ({progress, direction, isActive}) => { hpVideo2.play(); console.log("Video 2 Starts")},
+    onLeave: ({progress, direction, isActive}) => { hpVideo2.pause(); console.log("Video 2 Pause")},
+    onEnterBack: ({progress, direction, isActive}) => { hpVideo2.play(); console.log("Video 2 Starts")},
+    onLeaveBack: ({progress, direction, isActive}) => { hpVideo2.pause(); console.log("Video 2 Pause")},
+  }
+})
   

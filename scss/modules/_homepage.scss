@@ -163,10 +163,11 @@
 .rotate-text{
     transform: rotate(90deg);
     width: 400px;
-    top: 142px;
-    left: 50px;
+    top: 127px;
+    left: 43px;
     span{
-        font-size: 40px;
+        font-size: 30px;
+        vertical-align: middle !important
     }
 
     ul{
