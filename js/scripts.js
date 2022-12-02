@@ -10,10 +10,13 @@ document.addEventListener('scroll', (e) => {
         document.getElementById("header").style.backgroundColor = "white";
         // document.querySelector(".header_logo").src = `${url}/images/icons/aV-header-main-site.png`
         document.querySelector(".header_logo").src = `./images/icons/aV-header-main-site.png`
+        document.querySelector(".header_logo-mobile").src = `./images/icons/aV-header-main-site.png`
       } else {
         document.getElementById("header").style.backgroundColor = "transparent";
         // document.querySelector(".header_logo").src = `${url}/images/icons/logo.png`
         document.querySelector(".header_logo").src = `./images/icons/logo.png`
+        document.querySelector(".header_logo-mobile").src = `./images/icons/logo.png`
+
       }
 });
 
@@ -73,7 +76,7 @@ let aboutText = document.querySelector(".about-text");
 let aboutLine = document.querySelector(".about-line");
 zaid_about.fromTo([aboutHeader, aboutText], {
     opacity: 0,
-    scale: 1.5,
+    scale: 1.4,
 
 },{
     opacity: 1,
@@ -103,7 +106,7 @@ let gridImg3 = document.querySelector(".image-grid__img-3");
 
   zaid_grid.fromTo([gridImg1, gridImg2, gridImg3], {
     scrollTrigger: gridImg2,
-    scale: 1.3,
+    scale: 1.25,
 }, {
     scale: 1,
     ease: "slow(0.7, 0.7, false)",
@@ -111,7 +114,32 @@ let gridImg3 = document.querySelector(".image-grid__img-3");
 });
 
 
+var index = 0;
+var slides = document.querySelectorAll(".slides");
 
+function changeSlide(){
+
+  if(index<0){
+    index = slides.length-1;
+  }
+  
+  if(index>slides.length-1){
+    index = 0;
+  }
+  
+  for(let i=0;i<slides.length;i++){
+    slides[i].style.display = "none";
+  }
+  
+  slides[index].style.display= "block";
+  
+  index++;
+  
+  setTimeout(changeSlide,2000);
+  
+}
+
+changeSlide();
 
 
 
@@ -187,7 +215,7 @@ zaid_hor.to(sections, {
       trigger: ".scroll-container",
       pin: true,
       scrub: 1,
-      snap: 1 / (sections.length - 1),
+      // snap: 1 / (sections.length - 1),
       // base vertical scrolling on how wide the container is so it feels more natural.
       end: "+=3500",
     }
@@ -298,9 +326,9 @@ gsap.to("#video2", {
     start: "center top",
     end: "+=160%",
     onEnter: ({progress, direction, isActive}) => { hpVideo2.play(); console.log("Video 2 Starts")},
-    onLeave: ({progress, direction, isActive}) => { hpVideo2.pause(); console.log("Video 2 Pause")},
-    onEnterBack: ({progress, direction, isActive}) => { hpVideo2.play(); console.log("Video 2 Starts")},
-    onLeaveBack: ({progress, direction, isActive}) => { hpVideo2.pause(); console.log("Video 2 Pause")},
+    // onLeave: ({progress, direction, isActive}) => { hpVideo2.pause(); console.log("Video 2 Pause")},
+    // onEnterBack: ({progress, direction, isActive}) => { hpVideo2.play(); console.log("Video 2 Starts")},
+    // onLeaveBack: ({progress, direction, isActive}) => { hpVideo2.pause(); console.log("Video 2 Pause")},
   }
 })
   

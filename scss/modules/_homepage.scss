@@ -215,9 +215,37 @@ img.grid-img-2{
     object-fit: cover;
 }
 
-// .anita-test{
-//     height: 1041px;
+#slider{
+    margin:0 auto;
+    overflow:hidden;
+}
+
+.slides{
+    overflow:hidden;
+    animation-name:fade;
+    animation-duration:1s;
+    display:none;
+    max-height: 40.5vh;
+    
+    @media (min-width:992px) {
+        &{
+            max-height: 70vh;
+        }
+    }
+}
+
+// .active{
+//     background:black;
 // }
+
+@keyframes fade{
+    from{
+      opacity:0.4;
+    }
+    to{
+      opacity:1;
+    }
+}
 
 /* ==================== HOMEPAGE LIMITED OFFER ==================== */
 .pre-order__absolute-center{
