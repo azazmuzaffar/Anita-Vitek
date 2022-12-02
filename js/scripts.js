@@ -8,14 +8,15 @@ document.addEventListener('scroll', (e) => {
     let url = window.location.origin
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
         document.getElementById("header").style.backgroundColor = "white";
-        // document.querySelector(".header_logo").src = `${url}/images/icons/aV-header-main-site.png`
-        document.querySelector(".header_logo").src = `./images/icons/aV-header-main-site.png`
-        document.querySelector(".header_logo-mobile").src = `./images/icons/aV-header-main-site.png`
-      } else {
-        document.getElementById("header").style.backgroundColor = "transparent";
         // document.querySelector(".header_logo").src = `${url}/images/icons/logo.png`
         document.querySelector(".header_logo").src = `./images/icons/logo.png`
         document.querySelector(".header_logo-mobile").src = `./images/icons/logo.png`
+
+      } else {
+        document.getElementById("header").style.backgroundColor = "transparent";
+        // document.querySelector(".header_logo").src = `${url}/images/icons/aV-header-main-site.png`
+        document.querySelector(".header_logo").src = `./images/icons/aV-header-main-site.png`
+        document.querySelector(".header_logo-mobile").src = `./images/icons/aV-header-main-site.png`
 
       }
 });
@@ -76,7 +77,7 @@ let aboutText = document.querySelector(".about-text");
 let aboutLine = document.querySelector(".about-line");
 zaid_about.fromTo([aboutHeader, aboutText], {
     opacity: 0,
-    scale: 1.4,
+    scale: 1.3,
 
 },{
     opacity: 1,

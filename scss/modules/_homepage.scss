@@ -345,6 +345,7 @@ section.story{
 
 .story-image-position{
     object-position: -200px 0px;
+    aspect-ratio: 16/9;
 
     @media(min-width: 500px){
         &{
@@ -377,7 +378,13 @@ section.story{
 }
 
 .story-img-2-position{
-    object-position: center center;
+    object-position: center right;
+
+    @media (min-width:992px) {
+        &{
+            object-position: center center;
+        }
+    }
 }
 
 .story-bg-img{
