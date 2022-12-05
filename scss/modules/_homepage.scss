@@ -118,7 +118,7 @@
 
     &__mobile-reversible-text{
         top: 42%;
-        left: 65%;
+        left: 62%;
         transform: translate(-50%, -50%);
     }
 }
@@ -344,11 +344,12 @@ section.story{
 }
 
 .story-image-position{
-    object-position: -200px 0px;
+    object-position: -260px 0px;
     aspect-ratio: 16/9;
 
     @media(min-width: 500px){
         &{
+            object-position: -200px 0px;
             width: 100vw;
             object-position: center center;
         }
@@ -359,8 +360,17 @@ section.story{
     }
 
     @media(min-width: 990px){
+        &{
+            object-position: -200px 0px;
+        }
         &.custom-lg-height{
             height: 110vh!important;
+        }
+    }
+
+    @media(min-width: 1200px){
+        &{
+            object-position: 0px 0px;
         }
     }
 }

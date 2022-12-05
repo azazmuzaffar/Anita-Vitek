@@ -56,7 +56,7 @@ let zaid_about = gsap.timeline({
         scrub: true,
         pin: true,
         start: "top top",
-        end: "+=80%",
+        end: "+=70%",
         anticipatePin: 1,
       },
 
@@ -151,7 +151,7 @@ let zaid_preorder = gsap.timeline({
       scrub: true,
       pin: true,
       start: "top top",
-      end: "+=110%",
+      end: "+=70%",
       anticipatePin: 1,
     },
 
