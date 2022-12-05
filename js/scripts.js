@@ -7,16 +7,22 @@
 document.addEventListener('scroll', (e) => {
     let url = window.location.origin
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+      // After scrolling
         document.getElementById("header").style.backgroundColor = "white";
         // document.querySelector(".header_logo").src = `${url}/images/icons/logo.png`
         document.querySelector(".header_logo").src = `./images/icons/logo.png`
         document.querySelector(".header_logo-mobile").src = `./images/icons/logo.png`
+        document.querySelector(".header_logo").style.width = "40%"
+        document.querySelector(".header_logo-mobile").style.width = "40%"
 
       } else {
+        // Before scrollings
         document.getElementById("header").style.backgroundColor = "transparent";
         // document.querySelector(".header_logo").src = `${url}/images/icons/aV-header-main-site.png`
         document.querySelector(".header_logo").src = `./images/icons/aV-header-main-site.png`
         document.querySelector(".header_logo-mobile").src = `./images/icons/aV-header-main-site.png`
+        document.querySelector(".header_logo").style.width = "70%"
+        document.querySelector(".header_logo-mobile").style.width = "60%"
 
       }
 });
