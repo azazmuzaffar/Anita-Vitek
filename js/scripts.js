@@ -60,8 +60,8 @@ let zaid_about = gsap.timeline({
     scrollTrigger: {
         trigger: "#about",
         scrub: true,
-        pin: true,
-        start: "top top",
+        pin: false,
+        start: "top center",
         end: "+=70%",
         anticipatePin: 1,
       },
