@@ -31,9 +31,9 @@
 // DESKTOP VIEW
 .home-page-banner{
     @media (min-width: 992px){
-        // &__img-position{
-        //     object-position: 0px -90px;
-        // }
+        &__img-position{
+            object-position: 0px 0px;
+        }
 
         &__text-1{
             top: 40%; 
