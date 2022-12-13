@@ -44,11 +44,14 @@
 }
 
 .btn-2{
+    display: inline-block;
+    position: relative;
     font-weight: 600;
     border: 1px solid white;
     border-left: 0px;
     border-right: 0px;
     padding: 8px 6px; 
+    transition: 1s;
 
     @media (min-width:992px) {
         &{
@@ -56,6 +59,52 @@
         }
     }
 }
+
+.btn-2::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: top center;
+    transition: transform 0.35s ease-out;
+  }
+  
+.btn-2:hover::before {
+transform: scaleX(1);
+transform-origin: top center;
+}
+
+.btn-2:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom center;
+    transition: transform 0.35s ease-out;
+  }
+  
+.btn-2:hover:after {
+transform: scaleX(1);
+transform-origin: bottom center;
+}
+
+.btn-2:hover{
+    border: none;
+}
+
+// @keyframes slide {
+//     0%   {  border: 0px solid red; }
+//     50%  { border: 1px solid green; }
+//     100% { border: 2px solid yellow; }
+// }
 
 $finalHeight: 75vh;
 $finalWidth: 100vw;

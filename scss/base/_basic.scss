@@ -1293,6 +1293,50 @@ a {
   height: 40vh!important;
 }
 
+@media (min-width: 760px){
+  .height-md-100vh{
+    height: 100vh!important;
+  }
+
+  .height-md-95vh{
+    height: 95vh!important;
+  }
+  
+  .height-md-90vh{
+    height: 90vh!important;
+  }
+  
+  .height-md-80vh{
+    height: 80vh!important;
+  }
+  
+  .height-md-70vh{
+    height: 70vh!important;
+  }
+  
+  .height-md-60vh{
+    height: 60vh!important;
+  }
+  
+  .height-md-65vh{
+    height: 65vh!important;
+  }
+
+  .height-md-50vh{
+    height: 50vh!important;
+  }
+
+  .height-md-45vh{
+    height: 45vh!important;
+  }
+  
+  .height-md-40vh{
+    height: 40vh!important;
+  }
+  
+}
+
+
 @media (min-width: 992px){
   .height-lg-100vh{
     height: 100vh!important;
@@ -1313,13 +1357,13 @@ a {
   .height-lg-70vh{
     height: 70vh!important;
   }
+
+  .height-lg-65vh{
+    height: 68vh!important;
+  }
   
   .height-lg-60vh{
     height: 60vh!important;
-  }
-  
-  .height-lg-65vh{
-    height: 65vh!important;
   }
 
   .height-lg-50vh{
@@ -2106,6 +2150,7 @@ img.footer-small-icon{
   padding: 10px 30px;
   border: 1px $black solid;
   background-color: $black;
+  transition: 0.45s;
 }
 
 .btn--white{
@@ -2123,9 +2168,9 @@ img.footer-small-icon{
 
 
 .btn:hover{
-  background-color: $black;
+  background-color: $white;
   border: 1px $black solid;
-  color: $white;
+  color: $black;
 }
 
 

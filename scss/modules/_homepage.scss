@@ -27,6 +27,15 @@
         transform: translate(-50%, -50%);
     }
 }
+// TABLET SCREEN
+.home-page-banner{
+    @media (min-width: 750px){
+        &__img-position{
+            object-position: 0px 0px;
+        }
+    }
+}
+
 
 // DESKTOP VIEW
 .home-page-banner{
@@ -254,6 +263,13 @@ img.grid-img-2{
     transform: translate(-50%,-50%);
 }
 
+.pre-order__text{
+    // background-color: white;
+    padding: 0 20px;
+    color: black;
+    mix-blend-mode: multiply!important;
+}
+
 section.preorder .header-underline{
     bottom: 40px;
     left: -10px;
@@ -266,7 +282,7 @@ section.preorder .header-underline{
 
 .scroll-container {
     overscroll-behavior: none;
-    width: 600%;
+    width: 1000%;
     height: 100vh;
     display: flex;
     flex-wrap: nowrap;
@@ -472,6 +488,12 @@ section.story{
 
         &-bg-img{
             height: 100vh!important;
+        }
+    }
+
+    @media (min-width: 1600px)  {
+        &-bg-img{
+            height: 80vh!important;
         }
     }
 }
