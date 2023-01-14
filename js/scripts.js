@@ -10,19 +10,22 @@ document.addEventListener('scroll', (e) => {
       // After scrolling
         document.getElementById("header").style.backgroundColor = "white";
         // document.querySelector(".header_logo").src = `${url}/images/icons/logo.png`
-        document.querySelector(".header_logo").src = `./images/icons/logo.png`
+ /*        document.querySelector(".header_logo").src = `./images/icons/logo.png`
         document.querySelector(".header_logo-mobile").src = `./images/icons/logo.png`
         document.querySelector(".header_logo").style.width = "40%"
-        document.querySelector(".header_logo-mobile").style.width = "40%"
+        document.querySelector(".header_logo-mobile").style.width = "40%" */
+
+        document.querySelector(".header__logo").classList.add("text");
 
       } else {
         // Before scrollings
         document.getElementById("header").style.backgroundColor = "transparent";
         // document.querySelector(".header_logo").src = `${url}/images/icons/aV-header-main-site.png`
-        document.querySelector(".header_logo").src = `./images/icons/aV-header-main-site.png`
+   /*      document.querySelector(".header_logo").src = `./images/icons/aV-header-main-site.png`
         document.querySelector(".header_logo-mobile").src = `./images/icons/aV-header-main-site.png`
         document.querySelector(".header_logo").style.width = "70%"
-        document.querySelector(".header_logo-mobile").style.width = "60%"
+        document.querySelector(".header_logo-mobile").style.width = "60%" */
+        document.querySelector(".header__logo").classList.remove("text");
 
       }
 });
@@ -32,10 +35,31 @@ document.addEventListener('scroll', (e) => {
  **/
 
 // HOMEPAGE VIDEO FEAUTURE
-var video=document.getElementById("myVideo") ;   
+var video=document.getElementById("myVideo");   
+console.log(video.playbackRate);
+video.playbackRate = 0.5;
+console.log(video.playbackRate);
 
 video.addEventListener('click', function(e){
   video.muted = !video.muted;
+
+  let heroInner = document.querySelector(".home-page-banner__inner");
+  let currentCursor = heroInner.style.cursor;
+  if(currentCursor.includes("play")){
+    heroInner.style.cursor =  "url('./images/icons/svg/pause.svg'), auto";
+  }
+  else{
+    heroInner.style.cursor =  "url('./images/icons/svg/play.svg'), auto";
+  }
+
+  if(video.playbackRate == 0.5){
+    video.playbackRate = 1.0;
+  }else{
+    video.playbackRate = 0.5;
+  }
+  
+
+  console.log(video.playbackRate);
 });
 
 //  HOMEPAGE BANNER GSAP
@@ -62,10 +86,9 @@ let zaid_about = gsap.timeline({
         scrub: true,
         pin: false,
         start: "top bottom-=5vh",
-        end: "+=140%",
+        end: "+=80%",
         anticipatePin: 1,
       },
-
   });
 
 //   The about Line
@@ -74,7 +97,7 @@ zaid_about.fromTo(".about-line", {
 }, {
     scaleX: 1,
     transformOrigin: "right center", 
-    ease: "none"
+    ease: "none",
 })
 
 //   The about heading text
@@ -83,13 +106,15 @@ let aboutText = document.querySelector(".about-text");
 let aboutLine = document.querySelector(".about-line");
 zaid_about.fromTo([aboutHeader, aboutText], {
     opacity: 0,
-    scale: 1.3,
-
+    scale: 1.5,
+  
 },{
     opacity: 1,
     // text: "ABOUT",
     scale: 1,
-})
+});
+
+
 
 
 
@@ -169,7 +194,8 @@ zaid_preorder.fromTo(".preorder-line", {
 }, {
   scaleX: 1,
   transformOrigin: "center left", 
-  ease: "none"
+  ease: "none",
+  
 })
 
 //   The preorder heading text
