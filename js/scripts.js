@@ -176,7 +176,6 @@ let zaid_preorder = gsap.timeline({
     start: "top top",
     end: "+=90%",
     anticipatePin: 1,
-    markers: true,
   },
 });
 
@@ -231,7 +230,6 @@ gsap.fromTo(
       start: "top top",
       // end: "+=10%",
       anticipatePin: 1,
-      markers: true,
     },
     x: 0,
     scale: 1.2,
@@ -253,7 +251,6 @@ zaid_hor.to(sections, {
     // snap: 1 / (sections.length - 1),
     // base vertical scrolling on how wide the container is so it feels more natural.
     end: "bottom 10%",
-    markers: true,
   },
 });
 
@@ -264,7 +261,6 @@ gsap.utils.toArray(".Zpanel").forEach((panel, i) => {
     start: "top top",
     pin: true,
     pinSpacing: false,
-    markers: true,
   });
 });
 
@@ -277,7 +273,6 @@ let zaid_story = gsap.timeline({
     start: "top",
     end: "+=150%",
     anticipatePin: 1,
-    markers: true,
   },
 });
 
