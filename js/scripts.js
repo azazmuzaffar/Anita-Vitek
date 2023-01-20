@@ -244,7 +244,7 @@ let zaid_hor = gsap.timeline();
 let sections = gsap.utils.toArray(".panel");
 
 zaid_hor.to(sections, {
-  xPercent: -50 * (sections.length - 1),
+  xPercent: -45 * sections.length,
   ease: "none",
   scrollTrigger: {
     trigger: ".scroll-container",
@@ -252,7 +252,7 @@ zaid_hor.to(sections, {
     scrub: 1,
     // snap: 1 / (sections.length - 1),
     // base vertical scrolling on how wide the container is so it feels more natural.
-    end: "+=3500",
+    end: "bottom 10%",
     markers: true,
   },
 });
