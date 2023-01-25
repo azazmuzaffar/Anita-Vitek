@@ -215,7 +215,7 @@ zaid_preorder
   });
 
 // PREORDER HORIZONTAL TITLE
-gsap.fromTo(
+/* gsap.fromTo(
   ".pre-order__text",
   {
     // opacity: 0,
@@ -230,11 +230,12 @@ gsap.fromTo(
       start: "top top",
       // end: "+=10%",
       anticipatePin: 1,
+      
     },
     x: 0,
     scale: 1.2,
   }
-);
+); */
 
 // HORIZONTAL SCROLL
 
